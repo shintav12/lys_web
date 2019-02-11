@@ -6,196 +6,30 @@
 			<div class="row">
 				<div class="col-lg-1"></div>
 				<div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
-					<div class="row">
-					
-						<!-- START OF FIRST PARA -->
-						<div class="col-md-6 col-lg-6 col-xl-4 mb-30">
-							<div class="card h-100 bg-white">
-								<div class="plr-25 ptb-15">
-								
-									<h5 class="color-ash"><b>ART</b></h5>
-									<h4 class="mtb-10"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
-									<ul class="list-li-mr-10 color-lt-black">
-										<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-										<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-									</ul>
-									
-								</div><!-- hot-news -->
-							</div><!-- card -->
-						</div><!-- col-lg-4 col-md-6 -->
-						
-						<div class="col-md-6 col-lg-6 col-xl-4 mb-30">
-							<div class="card h-100 bg-white">
-								<div class="plr-25 ptb-15">
-								
-									<h5 class="color-ash"><b>ART</b></h5>
-									<h4 class="mtb-10"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
-									<ul class="list-li-mr-10 color-lt-black">
-										<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-										<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-									</ul>
-									
-								</div><!-- hot-news -->
-							</div><!-- card -->
-						</div><!-- col-lg-4 col-md-6 -->
-						
-						<div class="col-md-6 col-lg-6 col-xl-4 mb-30">
-							<div class="card h-100 bg-white">
-								<div class="plr-25 ptb-15">
-								
-									<h5 class="color-ash"><b>ART</b></h5>
-									<h4 class="mtb-10"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
-									<ul class="list-li-mr-10 color-lt-black">
-										<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-										<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-									</ul>
-									
-								</div><!-- hot-news -->
-							</div><!-- card -->
-						</div><!-- col-lg-4 col-md-6 -->
-					
-						<!-- END OF FIRST PARA -->
-					</div><!-- row -->
-					
-					<h4 class="mb-30 mt-20 clearfix"><b>Whats trending</b></h4>
-					
-					<div class="row">
-						
-						<!-- START OF SECOND PARA -->
-						<div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 mb-30">
-							<div class="card h-100 h-xs-500x">
-								<div class="sided-half sided-xs-half h-100 bg-white">
-								
-									<!-- SETTING IMAGE WITH bg-2 -->
-									<div class="s-left w-50 w-xs-100 h-100 h-xs-50 pos-relative">
-										<div class="bg-2 abs-tblr"></div></div>
-									
-									<div class="s-right w-50 w-xs-100 h-xs-50">
-										<div class="plr-25 ptb-25 h-100">
-											<div class="dplay-tbl">
-												<div class="dplay-tbl-cell">
-												
-													<h5 class="color-ash"><b>ART</b></h5>
-													<h2 class="mtb-10"><a href="#">
-														<b>As an Alchoholic, Your Company "Parks" are Killing me</b></a></h2>
-													<ul class="list-li-mr-10 color-lt-black">
-														<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-														<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-													</ul>
-													
-												</div><!-- dplay-tbl-cell -->
-											</div><!-- dplay-tbl -->
-										</div><!-- plr-25 ptb-25 -->
-									</div><!-- s-right -->
-								</div><!-- sided-half -->
-							</div><!-- card -->
-						</div><!-- col-lg-8 col-md-12 -->
-						
-						<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
-							<div class="card h-100 h-xs-350x">
-								<div class="bg-white h-100">
-								
-									<!-- SETTING IMAGE WITH bg-3 -->
-									<div class="h-50 bg-3 dplay-lg-none dplay-xs-block"></div>
-									
-									<div class="plr-25 ptb-15 h-50">
-										<div class="dplay-tbl">
-											<div class="dplay-tbl-cell">
-											
-												<h5 class="color-ash"><b>ART</b></h5>
-												<h4 class="mtb-10">
-													<a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
-												<ul class="list-li-mr-10 color-lt-black">
-													<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-													<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-												</ul>
-												
-											</div><!-- dplay-tbl-cell -->
-										</div><!-- dplay-tbl -->
-									</div><!-- plr-25 ptb-15 -->
-								</div><!-- hot-news -->
-							</div><!-- card -->
-						</div><!-- col-lg-4 col-md-6 -->
-						
-						<!-- END OF SECOND PARA -->
-				
-						<!-- START OF THIRD PARA -->
-						<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4  mb-30">
-							<div class="card h-100 bg-white">
-								<div class="plr-25 ptb-15 h-100">
-									<div class="dplay-tbl">
-										<div class="dplay-tbl-cell">
-										
-											<h5 class="color-ash"><b>ART</b></h5>
-											<h4 class="mtb-10"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
-											<ul class="list-li-mr-10 color-lt-black">
-												<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-												<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-											</ul>
-											
-										</div><!-- dplay-tbl-cell -->
-									</div><!-- dplay-tbl -->
-								</div><!-- plr-25 ptb-15 -->
-							</div><!-- card -->
-						</div><!-- col-lg-4 col-md-6 -->
-						
-						<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
-						
-							<!-- SETTING IMAGE WITH bg-4 -->
-							<div class="card h-100 pos-relative bg-4 bg-layer-4 color-white">
-								<div class="plr-25 ptb-15">
-									<h5 class="color-grey"><b>ART</b></h5>
-									<h4 class="mtb-10"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
-									<ul class="list-li-mr-10 color-grey">
-										<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-										<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-									</ul>
-								</div><!-- hot-news -->
-							</div><!-- card -->
-						</div><!-- col-lg-4 col-md-6 -->
-						
-						<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
-						
-							<!-- SETTING IMAGE WITH bg-5 -->
-							<div class="card pos-relative h-100 bg-5 bg-layer-4 color-white">
-								<div class="plr-25 ptb-15">
-									<h5 class="color-grey"><b>ART</b></h5>
-									<h4 class="mtb-10"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
-									<ul class="list-li-mr-10 color-grey">
-										<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-										<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-									</ul>
-								</div><!-- hot-news -->
-							</div><!-- card -->
-						</div><!-- col-lg-4 col-md-6 -->
-					
-						<!-- END OF THIRD PARA -->
-					</div><!-- row -->
-					
 					<h4 class="mb-30 mt-20 clearfix"><b>Most Popular Videos</b></h4>
-					
+
 					<div class="row">
 						<div class="col-sm-12 mb-30 swiper-area ">
-						
+
 							<!-- SETTING IMAGE WITH bg-6 -->
 							<div class="bg-6 p-40 bg-layer-4 pos-relative z-1 oflow-hidden pr-0 color-white">
 								<div class="mx-w-200x">
 									<h5 class="color-grey"><b>ART</b></h5>
 									<h2 class="mtb-10"><a href="#">
-										<b>As an Alchoholic, Your Company "Parks" are Killing me</b></a></h2>
+											<b>As an Alchoholic, Your Company "Parks" are Killing me</b></a></h2>
 								</div><!-- mx-w-200x -->
-								
+
 								<div class="all-scroll pos-relative mt-50">
 									<h5 class="mb-50"><b>HOT NEWS</b></h5>
-										
+
 									<div class="swiper-scrollbar"></div>
-									
-									<div class="swiper-container oflow-visible" data-slide-effect="slide" data-autoheight="false" 
-										data-swiper-speed="500" data-swiper-margin="25" data-swiper-slides-per-view="3"
-										data-swiper-breakpoints="true" data-scrollbar="true" data-swiper-loop="true"
-										data-swpr-responsive="[1, 2, 2, 2]">
-										
-									
+
+									<div class="swiper-container oflow-visible" data-slide-effect="slide" data-autoheight="false"
+										 data-swiper-speed="500" data-swiper-margin="25" data-swiper-slides-per-view="3"
+										 data-swiper-breakpoints="true" data-scrollbar="true" data-swiper-loop="true"
+										 data-swpr-responsive="[1, 2, 2, 2]">
+
+
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
 												<div class="pos-relative">
@@ -204,7 +38,7 @@
 													<img src="images/trending_2_400X250.jpg" alt="">
 												</div><!-- pos-relative -->
 											</div><!-- swiper-slide -->
-											
+
 											<div class="swiper-slide">
 												<div class="pos-relative">
 													<a class="abs-center circle-50 bg-tp-5 text-center" href="#">
@@ -212,7 +46,7 @@
 													<img src="images/trending_3_400X250.jpg" alt="">
 												</div><!-- pos-relative -->
 											</div><!-- swiper-slide -->
-											
+
 											<div class="swiper-slide">
 												<div class="pos-relative">
 													<a class="abs-center circle-50 bg-tp-5 text-center" href="#">
@@ -220,7 +54,7 @@
 													<img src="images/latest_articles_8_400x250.jpg" alt="">
 												</div><!-- pos-relative -->
 											</div><!-- swiper-slide -->
-											
+
 											<div class="swiper-slide">
 												<div class="pos-relative">
 													<a class="abs-center circle-50 bg-tp-5 text-center" href="#">
@@ -228,15 +62,34 @@
 													<img src="images/latest_articles_3_400x250.jpg" alt="">
 												</div><!-- pos-relative -->
 											</div><!-- swiper-slide -->
-											
+
 										</div><!-- swiper-wrapper -->
 									</div><!-- swiper-container -->
-										
+
 								</div><!-- swiper-area -->
-								
+
 							</div><!-- bg-4 -->
 						</div><!-- col-lg-4 col-md-6 -->
-					</div><!-- row -->
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 col-lg-6 col-xl-4 mb-30">
+							<div class="card h-100 bg-white">
+								<div class="plr-25 ptb-15">
+									<h5 class="color-ash"><b>ART</b></h5>
+									<h4 class="mtb-10"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
+									<ul class="list-li-mr-10 color-lt-black">
+										<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
+										<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					
+
 					
 					<h4 class="mb-30 mt-20 clearfix"><b>Most Popular Videos</b></h4>
 					
@@ -256,48 +109,6 @@
 										</div><!-- dplay-tbl-cell -->
 									</div><!-- dplay-tbl -->
 								</div><!-- plr-25 ptb-15 -->
-							</div><!-- card -->
-						</div><!-- col-lg-4 col-md-6 -->
-						
-						<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
-							<div class="card h-100">
-							
-								<div class="h-50 pb-15">
-									<div class="plr-25 h-100 ptb-15 bg-white">
-										<div class="dplay-tbl">
-											<div class="dplay-tbl-cell">
-											
-												<h5 class="color-ash"><b>ART</b></h5>
-												<h4 class="mtb-10"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
-												<ul class="list-li-mr-10 color-ash">
-													<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-													<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-												</ul>
-												
-											</div><!-- dplay-tbl-cell -->
-										</div><!-- dplay-tbl -->
-									</div><!-- plr-25 ptb-15 -->
-								</div><!--h-50 bg-white -->
-								
-								<div class="h-50 pt-15">
-									
-									<!-- SETTING IMAGE WITH bg-7 -->
-									<div class="plr-25 ptb-15 pos-relative h-100 bg-7 bg-layer-4 color-white">
-										<div class="dplay-tbl">
-											<div class="dplay-tbl-cell">
-											
-												<h5 class="color-grey"><b>ART</b></h5>
-												<h4 class="mtb-10"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
-												<ul class="list-li-mr-10 color-grey">
-													<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-													<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-												</ul>
-												
-											</div><!-- dplay-tbl-cell -->
-										</div><!-- dplay-tbl -->
-									</div><!-- plr-25 ptb-15 -->
-								</div><!--h-50 bg-white -->
-								
 							</div><!-- card -->
 						</div><!-- col-lg-4 col-md-6 -->
 						
@@ -322,8 +133,7 @@
 								</div><!-- plr-25 ptb-15 -->
 							</div><!-- card -->
 						</div><!-- col-lg-4 col-md-6 -->
-						
-						
+
 						<div class=" col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
 							<div class="card h-100 min-h-350x">
 								<div class="bg-white h-100">
@@ -349,39 +159,7 @@
 								</div><!-- hot-news -->
 							</div><!-- card -->
 						</div><!-- col-lg-4 col-md-6 -->
-						
-						
-						<!-- START OF SECOND PARA -->
-						<div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 mb-30">
-							<div class="card h-100 h-xs-500x">
-								<div class="sided-half sided-xs-half h-100 bg-white">
-								
-									<!-- SETTING IMAGE WITH bg-9 -->
-									<div class="s-left w-50 w-xs-100 h-100 h-xs-50 pos-relative">
-										<div class="bg-9 abs-tblr"></div></div>
-									
-									<div class="s-right w-50 w-xs-100 h-xs-50">
-										<div class="plr-25 ptb-25 h-100">
-											<div class="dplay-tbl">
-												<div class="dplay-tbl-cell">
-												
-													<h5 class="color-ash"><b>ART</b></h5>
-													<h2 class="mtb-10"><a href="#">
-														<b>As an Alchoholic, Your Company "Parks" are Killing me</b></a></h2>
-													<ul class="list-li-mr-10 color-lt-black">
-														<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-														<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-													</ul>
-													
-												</div><!-- dplay-tbl-cell -->
-											</div><!-- dplay-tbl -->
-										</div><!-- plr-25 ptb-25 -->
-									</div><!-- s-right -->
-								</div><!-- sided-half -->
-							</div><!-- card -->
-						</div><!-- col-lg-8 col-md-12 -->
-						
-						<!-- END OF SECOND PARA -->
+
 					</div><!-- row -->
 					
 					<h6 class="text-center mt-20"><a class="btn-brdr-grey color-ash plr-30" href="#"><b>LOAD MORE</b></a></h6>
