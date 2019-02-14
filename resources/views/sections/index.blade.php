@@ -114,7 +114,7 @@
 				</div><!-- col-sm-9 -->
 				
 				<div class="col-md-12 col-lg-3 bg-2-white ptb-50 pl-30 pl-md-15">
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-md-12 col-lg-8">
 							<div class="mx-w-md-400x mlr-md-auto">
 							
@@ -124,39 +124,39 @@
 									<div class="sided-80x mb-20">
 										<div class="s-left">
 											<img src="images/top_1_120x120.jpg" alt="">
-										</div><!-- s-left -->
+										</div>
 										<div class="s-right">
 											<h5 class="pt-5"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
+										</div>
+									</div>
 									
 									<div class="sided-80x mb-20">
 										<div class="s-left">
 											<img src="images/top_2_120x120.jpg" alt="">
-										</div><!-- s-left -->
+										</div>
 										<div class="s-right">
 											<h5 class="pt-5"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
+										</div>
+									</div>
 									
 									<div class="sided-80x mb-20">
 										<div class="s-left">
 											<img src="images/top_3_120x120.jpg" alt="">
-										</div><!-- s-left -->
+										</div>
 										<div class="s-right">
 											<h5 class="pt-5"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
+										</div>
+									</div>
 									
 									<div class="sided-80x mb-20">
 										<div class="s-left">
 											<img src="images/top_4_120x120.jpg" alt="">
-										</div><!-- s-left -->
+										</div>
 										<div class="s-right">
 											<h5 class="pt-5"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
-								</div><!-- mb-50 -->
+										</div>
+									</div>
+								</div>
 								
 								<a class="mb-50 pos-relative dplay-block" href="#">
 									
@@ -168,9 +168,9 @@
 												<h1 class="mb-10"><b class="mr-15">S</b><b class="ml-15">A</b></h1>
 												<h1 class="mt-10"><b class="mr-15">L</b><b class="ml-15">E</b></h1>
 											</div>
-										</div><!-- dplay-tbl -->
-									</div><!-- abs-tblr -->
-								</a><!-- mb-50 -->
+										</div>
+									</div>
+								</a>
 								
 								<div class="mb-50">
 									<h5 class="mb-30"><b>NEWEST VIDEO</b></h5>
@@ -179,42 +179,42 @@
 										<div class="s-left">
 											<a class="v-icn" href="#"><i class="ion-play"></i></a>
 											<img src="images/top_5_120x120.jpg" alt="">
-										</div><!-- s-left -->
+										</div>
 										<div class="s-right">
 											<h5 class="pt-5"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
+										</div>
+									</div>
 									
 									<div class="sided-80x mb-20">
 										<div class="s-left">
 											<a class="v-icn" href="#"><i class="ion-play"></i></a>
 											<img src="images/top_6_120x120.jpg" alt="">
-										</div><!-- s-left -->
+										</div>
 										<div class="s-right">
 											<h5 class="pt-5"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
+										</div>
+									</div>
 									
 									<div class="sided-80x mb-20">
 										<div class="s-left">
 											<a class="v-icn" href="#"><i class="ion-play"></i></a>
 											<img src="images/top_7_120x120.jpg" alt="">
-										</div><!-- s-left -->
+										</div>
 										<div class="s-right">
 											<h5 class="pt-5"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
+										</div>
+									</div>
 									
 									<div class="sided-80x mb-20">
 										<div class="s-left">
 											<a class="v-icn" href="#"><i class="ion-play"></i></a>
 											<img src="images/top_1_120x120.jpg" alt="">
-										</div><!-- s-left -->
+										</div>
 										<div class="s-right">
 											<h5 class="pt-5"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
-								</div><!-- mb-50 -->
+										</div>
+									</div>
+								</div>
 								
 								<a class="mb-50 pos-relative dplay-block" href="#">
 								
@@ -226,9 +226,9 @@
 												<h3><b>CHARITY</b></h3>
 												<h4><b>tournament</b></h4>
 											</div>
-										</div><!-- dplay-tbl -->
-									</div><!-- abs-tblr -->
-								</a><!-- mb-50 -->
+										</div>
+									</div>
+								</a>
 								
 								<div class="mb-0">
 									<h5 class="mb-30"><b>NEWEST VIDEO</b></h5>
@@ -239,13 +239,13 @@
 												<div class="dplay-tbl-cell">
 													<h2><b>16</b></h2>
 													<h4><b>JAN</b></h4>
-												</div><!-- dplay-tbl-cell -->
-											</div><!-- dplay-tbl -->
-										</div><!-- s-left -->
+												</div>
+											</div>
+										</div>
 										<div class="s-right">
 											<h5><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
+										</div>
+									</div>
 									
 									<div class="sided-80x mb-20">
 										<div class="s-left color-ash text-center">
@@ -253,13 +253,13 @@
 												<div class="dplay-tbl-cell">
 													<h2><b>16</b></h2>
 													<h4><b>JAN</b></h4>
-												</div><!-- dplay-tbl-cell -->
-											</div><!-- dplay-tbl -->
-										</div><!-- s-left -->
+												</div>
+											</div>
+										</div>
 										<div class="s-right">
 											<h5><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
+										</div>
+									</div>
 									
 									<div class="sided-80x mb-20">
 										<div class="s-left color-ash text-center">
@@ -267,13 +267,13 @@
 												<div class="dplay-tbl-cell">
 													<h2><b>16</b></h2>
 													<h4><b>JAN</b></h4>
-												</div><!-- dplay-tbl-cell -->
-											</div><!-- dplay-tbl -->
-										</div><!-- s-left -->
+												</div>
+											</div>
+										</div>
 										<div class="s-right">
 											<h5><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
+										</div>
+									</div>
 									
 									<div class="sided-80x mb-20">
 										<div class="s-left color-ash text-center">
@@ -281,18 +281,18 @@
 												<div class="dplay-tbl-cell">
 													<h2><b>16</b></h2>
 													<h4><b>JAN</b></h4>
-												</div><!-- dplay-tbl-cell -->
-											</div><!-- dplay-tbl -->
-										</div><!-- s-left -->
+												</div>
+											</div>
+										</div>
 										<div class="s-right">
 											<h5><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-										</div><!-- s-left -->
-									</div><!-- sided-80x -->
-								</div><!-- mb-50 -->
+										</div>
+									</div>
+								</div>
 								
-							</div><!-- mx-w-400 -->
-						</div><!-- col-sm-9 -->
-					</div><!-- row -->
+							</div>
+						</div>
+					</div> -->
 				</div><!-- col-sm-3 -->
 			</div><!-- row -->
 		</div><!-- container -->
