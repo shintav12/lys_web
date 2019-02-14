@@ -42,20 +42,21 @@
                                     data-swiper-breakpoints="true" data-scrollbar="true" data-swiper-loop="true"
                                     data-swpr-responsive="[1, 2, 1, 2]">
                                     <div class="swiper-wrapper">
+                                        @foreach($posts as $post)\
                                         <div class="swiper-slide">
                                             <div class="bg-white">
-                                                <img src="images/hot_news_1_300x150.jpg" alt="">
+                                                <img src="<?php echo config('app.path_url').$post->images[0]->image ?>" alt="">
                                                 <div class="plr-25 ptb-15">
-                                                    <h5 class="color-ash"><b>ART</b></h5>
+                                                    <h5 class="color-ash"><b>Posts</b></h5>
                                                     <h4 class="mtb-10">
-                                                        <a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
+                                                        <a href="#"><b>{{$post->title}}</b></a></h4>
                                                     <ul class="list-li-mr-10 color-lt-black">
-                                                        <li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-                                                        <li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
+                                                        <li>{{$post->updated_at}}</li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>

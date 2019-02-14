@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'path_archive' => env('PATH_ARCHIVE'),
+    'path_url' => env('PATH_URL'),
 
     /*
     |--------------------------------------------------------------------------

@@ -12,79 +12,27 @@
 						<div class="col-sm-12 mb-30 swiper-area ">
 
 							<!-- SETTING IMAGE WITH bg-6 -->
-							<div class="bg-6 p-40 bg-layer-4 pos-relative z-1 oflow-hidden pr-0 color-white">
-								<div class="mx-w-200x">
-									<h5 class="color-grey"><b>ART</b></h5>
-									<h2 class="mtb-10"><a href="#">
-											<b>As an Alchoholic, Your Company "Parks" are Killing me</b></a></h2>
-								</div><!-- mx-w-200x -->
-
-								<div class="all-scroll pos-relative mt-50">
-									<h5 class="mb-50"><b>HOT NEWS</b></h5>
-
-									<div class="swiper-scrollbar"></div>
-
-									<div class="swiper-container oflow-visible" data-slide-effect="slide" data-autoheight="false"
-										 data-swiper-speed="500" data-swiper-margin="25" data-swiper-slides-per-view="3"
-										 data-swiper-breakpoints="true" data-scrollbar="true" data-swiper-loop="true"
-										 data-swpr-responsive="[1, 2, 2, 2]">
+							<div class="p-40 bg-layer-4 pos-relative z-1 oflow-hidden pr-0 color-white">
 
 
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="pos-relative">
-													<a class="abs-center circle-50 bg-tp-5 text-center" href="#">
-														<i class="lh-50 font-12 ion-play"></i></a>
-													<img src="images/trending_2_400X250.jpg" alt="">
-												</div><!-- pos-relative -->
-											</div><!-- swiper-slide -->
-
-											<div class="swiper-slide">
-												<div class="pos-relative">
-													<a class="abs-center circle-50 bg-tp-5 text-center" href="#">
-														<i class="lh-50 font-12 ion-play"></i></a>
-													<img src="images/trending_3_400X250.jpg" alt="">
-												</div><!-- pos-relative -->
-											</div><!-- swiper-slide -->
-
-											<div class="swiper-slide">
-												<div class="pos-relative">
-													<a class="abs-center circle-50 bg-tp-5 text-center" href="#">
-														<i class="lh-50 font-12 ion-play"></i></a>
-													<img src="images/latest_articles_8_400x250.jpg" alt="">
-												</div><!-- pos-relative -->
-											</div><!-- swiper-slide -->
-
-											<div class="swiper-slide">
-												<div class="pos-relative">
-													<a class="abs-center circle-50 bg-tp-5 text-center" href="#">
-														<i class="lh-50 font-12 ion-play"></i></a>
-													<img src="images/latest_articles_3_400x250.jpg" alt="">
-												</div><!-- pos-relative -->
-											</div><!-- swiper-slide -->
-
-										</div><!-- swiper-wrapper -->
-									</div><!-- swiper-container -->
-
-								</div><!-- swiper-area -->
-
-							</div><!-- bg-4 -->
-						</div><!-- col-lg-4 col-md-6 -->
+							</div>
+						</div>
 					</div>
 
 					<div class="row">
+						@foreach($phrases as $phrase)
 						<div class="col-md-6 col-lg-6 col-xl-4 mb-30">
 							<div class="card h-100 bg-white">
 								<div class="plr-25 ptb-15">
-									<h5 class="color-ash"><b>ART</b></h5>
-									<h4 class="mtb-10"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h4>
+									<h5 class="color-ash"><b>{{$phrase->title}}</b></h5>
+									<h4 class="mtb-10"><a href="#"><b>{{$phrase->text}}</b></a></h4>
 									<ul class="list-li-mr-10 color-lt-black">
-										<li><i class="mr-5 font-12 ion-android-favorite-outline"></i>15</li>
-										<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
+										<li>{{$phrase->updated_at}}</li>
 									</ul>
 								</div>
 							</div>
 						</div>
+						@endforeach
 					</div>
 
 

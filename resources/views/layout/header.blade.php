@@ -19,8 +19,6 @@
         <li><a href="#">Beauty</a></li>
         <li><a href="#">Music</a></li>
         <li><a href="#">Art</a></li>
-        <li><a href="#">Fashion</a></li>
-        <li><a href="#">Contact</a></li>
     </ul>
     <div class="clearfix"></div>
 </header>

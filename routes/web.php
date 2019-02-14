@@ -1,6 +1,5 @@
 <?php
 
-Route::get('/', function () {
-    return view('sections/index');
-});
+
+Route::get("/","WebController@index");
 
