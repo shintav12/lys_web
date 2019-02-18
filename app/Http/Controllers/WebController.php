@@ -88,7 +88,7 @@ class WebController extends Controller
         FROM tags t
         JOIN object_tag ot on ot.tag_id = t.id
         WHERE ot.object_type = 'post'
-        AND ot.object_id = ".$video->id));
+        AND ot.object_id = ".$post->id));
         $post->content = json_decode($post->content);
         $post_metas = DB::table('metas')->where('object_id', $post->id)->where('type',"post")->first();
         $images = explode(",", $post->images);
