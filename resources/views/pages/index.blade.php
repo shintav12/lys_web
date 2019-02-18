@@ -23,11 +23,11 @@
 		background: #00e6a6;
 		border-radius: 5px;
 	}
-	.btn-brdr-grey:hover {
-    border: 1px solid #673ab7;
-    background: #673ab7;
-    color: white;
-}
+		.btn-brdr-grey2:hover {
+		border: 1px solid #673ab7;
+		background: #673ab7;
+		color: white;
+	}
 </style>
 @endsection
 @section("body")

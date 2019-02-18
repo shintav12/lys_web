@@ -1,4 +1,4 @@
-@extends("templates.tags")
+@extends("templates.tag")
 
 @section("styles")
 @endsection
@@ -24,7 +24,7 @@
 												<div class="dplay-tbl-cell">
 													<h5 class="color-ash"><b>{{$item->title}}</b></h5>
 													<h4 class="mtb-10">
-														<a href="<?php echo url('/'.$slug.'/'.$item->slug) ?>"><b>{{$item->subtitle}}</b></a></h4>
+														<a href="<?php echo url('/'.$item->type.'/'.$item->slug) ?>"><b>{{$item->subtitle}}</b></a></h4>
 													<ul class="list-li-mr-10 color-lt-black">
 														<li>{{$item->updated_at}}</li>
 													</ul>

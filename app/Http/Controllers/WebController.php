@@ -29,21 +29,21 @@ class WebController extends Controller
         $phrases = Phrase::orderBy("id","DESC")->limit(3)->get();
 
         $hots = DB::select(DB::raw("select * from (
-            (SELECT v.title,v.subtitle, v.slug, v.updated_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
+            (SELECT v.title,v.subtitle, v.slug, v.updated_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'videos' as type 
                     FROM videos v
                     LEFT JOIN images i ON v.id = i.object_id and i.object_type = 'video'
                     GROUP BY v.id
                     ORDER BY v.id DESC 
                     LIMIT 5)
                     UNION ALL
-            (SELECT p.title,p.subtitle, p.slug, p.updated_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
+            (SELECT p.title,p.subtitle, p.slug, p.updated_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'posts' as type 
                     FROM post p
                     LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'post'
                     GROUP BY p.id
                     ORDER BY p.id DESC 
                     LIMIT 5)
                     UNION ALL
-            (SELECT f.title,f.subtitle, f.slug, f.updated_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
+            (SELECT f.title,f.subtitle, f.slug, f.updated_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'freebies' as type  
                     FROM frebies f
                     LEFT JOIN images i ON f.id = i.object_id and i.object_type = 'post'
                     GROUP BY f.id
@@ -161,19 +161,52 @@ class WebController extends Controller
     }
 
     public function tags($slug){
-        $tag = Tag::where("slug",$slug)->first();
+        $tag_s = Tag::where("slug",$slug)->first();
         $tags = DB::select(DB::raw("SELECT ot.*
         FROM object_tag ot
-        JOIN tags t
-        WHERE t.slug = '".$slug."'
+        WHERE ot.tag_id = ".$tag_s->id."
         LIMIT 9"));
         $items = [];
         foreach($tags as $tag){
-            $item[] = returnObj($tag->object_type, $object_id);
+            switch($tag->object_type){
+                case "post":{
+                    $items[] = DB::select(DB::raw("SELECT p.*,GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'posts' as type  
+                                                FROM post p 
+                                                LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'post'
+                                                WHERE p.id = ".$tag->object_id))[0];
+                    break;
+                }
+                case "video":{
+                    $items[] = DB::select(DB::raw("SELECT p.*,GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'videos' as type  
+                                                FROM videos p 
+                                                LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'video'
+                                                WHERE p.id = ".$tag->object_id))[0];
+                    break;
+                }
+                case "frebie":{
+                    $items[] = DB::select(DB::raw("SELECT p.*,GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'freebies' as type  
+                                                FROM frebies p 
+                                                LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'frebie    '
+                                                WHERE p.id = ".$tag->object_id))[0];
+                    break;
+                }
+                case "product":{
+                    $items[] = DB::select(DB::raw("SELECT p.*,GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'products' as type  
+                                                FROM products p 
+                                                LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'product'
+                                                WHERE p.id = ".$tag->object_id))[0];
+                    break;
+                }
+            }
+    
         }
+        
+        //var_dump($tags);
+        //var_dump($items);
+        //die();
 
-        $template["items"] = $item;
-        $template["tag"] = $tag;
+        $template["items"] = $items;
+        $template["tag"] = $tag_s;
 
         return view("pages.tags",$template);
     }
