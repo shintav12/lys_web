@@ -51,12 +51,11 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 h-sm-50 oflow-hidden swiper-area pos-relative">	
-                <div><a class="plr-20 btn-brdr-grey color-white" href="#"><b>Conviertete en un Super Super WAO</b></a></div>		
                     <div class="abs-blr pos-sm-static">
                         <div class="row pos-relative mt-50 all-scroll">
                             <div class="swiper-scrollbar resp"></div>
                             <div class="col-md-10">
-                                <h5 class="mb-50 color-white"><b>HOT NEWS</b></h5>
+                                <h5 class="mb-50 color-white"><b>RECI&Eacute;N HORNEADO</b></h5>
                                 <div class="swiper-container oflow-visible" data-slide-effect="slide" data-autoheight="false" 
                                     data-swiper-speed="500" data-swiper-margin="25" data-swiper-slides-per-view="2"
                                     data-swiper-breakpoints="true" data-scrollbar="true" data-swiper-loop="true"

@@ -12,7 +12,6 @@
             <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
-                    <h4 class="mb-30 mt-20 clearfix"><b>Latest Articles</b></h4>
                     <div class="row">
                     @foreach($items as $item)
 							<div class=" col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">

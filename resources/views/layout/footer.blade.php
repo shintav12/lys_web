@@ -40,12 +40,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					<div class="card h-100">
 						<div class="dplay-tbl">
 							<div class="dplay-tbl-cell">
-								<form class="form-block form-brdr-b mx-w-400x m-auto">
-						
-									<input class="color-white ptb-15 center-sm-text" type="text" placeholder=" Your Email">
-									<button class="mt-30 btn-brdr-grey color-ash w-100 text-center" type="submit">SUBSCRIBE</button>
-								
-								</form>
+								<div class="form-block form-brdr-b mx-w-400x m-auto">
+									<div><a class="plr-20 btn-brdr-grey color-white" href="https://www.youtube.com/channel/UC8OmB2Ln7n7hcH1j_5uXIFg?sub_confirmation=1"><b>Conviertete en un Super WAO</b></a></div>		
+								</div>
 							</div><!-- dplay-tbl-cell -->
 						</div><!-- dplay-tbl -->
 					</div><!-- card -->

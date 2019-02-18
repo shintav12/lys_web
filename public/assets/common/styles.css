@@ -440,6 +440,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
     /* SEARCH AREA */
     header .right-area {
         width: 250px;
+        display: none;
     }
 }
 
@@ -458,6 +459,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
     header .right-area {
         height: 60px;
         width: 200px;
+        display: none;
     }
 }
 
@@ -526,12 +528,23 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
     }
 }
 
+@media screen and (min-width: 0px) and (max-width: 1040) {
+    .right-area {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1041) {
+    .right-area {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 575px) {
     header .right-area {
         width: 100%;
         float: none;
         clear: both;
-        border-top: 1px solid #aaa;
         border-left: 0;
     }
     header ul.main-menu>li>a {
