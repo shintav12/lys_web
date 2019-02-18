@@ -1,9 +1,32 @@
-@extends("templates.post")
+@extends("templates.video")
 
 @section("styles")
 @endsection
 
 @section("scripts")
+<script>
+	$fluidEl = $("body");
+	var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+		$allVideos.each(function() {
+			$(this).data('aspectRatio', this.height / this.width)
+
+				.removeAttr('height')
+				.removeAttr('width');
+
+			});
+			$(window).resize(function() {
+
+			var newWidth = $fluidEl.width();
+
+
+			$allVideos.each(function() {
+
+			var $el = $(this);
+			$el.width(newWidth).height(newWidth * $el.data('aspectRatio'));
+	});
+	}).resize();
+	</script>
 @endsection
 
 @section("body")
@@ -28,11 +51,16 @@
 								<li><a href="#"><i class="color-google ion-social-google"></i></a></li>
 							</ul>
 						</div>
-					</div>
+                    </div>
+                    <div class="mt-40 mt-sm-10">
+                        <div class="videoWrapper">
+                            <?php echo($item->video)?>
+                        </div>
+					</div>		
 					<div class="mt-40 mt-sm-10">
-						<?php echo($item->content)?>
-					</div>			
-					@include("layout.tags")
+						<?php echo($item->text)?>
+                    </div>			
+                    @include("layout.tags")
 					<div class="brdr-grey-1 mt-50 mt-sm-20"></div>
 					@include("layout.related")
 				</div><!-- col-sm-9 -->

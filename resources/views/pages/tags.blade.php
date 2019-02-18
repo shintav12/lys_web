@@ -1,4 +1,4 @@
-@extends("templates.section")
+@extends("templates.tags")
 
 @section("styles")
 @endsection
