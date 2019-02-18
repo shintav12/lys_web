@@ -51,7 +51,7 @@
     @include("layout.header")
     <div class="slider-main h-500x h-sm-auto pos-relative pt-95 pb-25">
 		<div class="img-bg bg-custom bg-layer-2"></div>
-		<div class="container-fluid h-100 mt-xs-50">
+		<div class="container-fluid h-100 mt-xs-0">
 			<div class="dplay-tbl">
 				<div class="dplay-tbl-cell color-white text-center">
                 <div class="mx-w-600x">
