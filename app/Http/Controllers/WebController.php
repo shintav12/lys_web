@@ -128,7 +128,7 @@ class WebController extends Controller
 
     }
 
-    public function returnObj($type, $id){
+    public static function returnObj($type, $id){
         $obj = [];
         switch($slug){
             case "post":{
