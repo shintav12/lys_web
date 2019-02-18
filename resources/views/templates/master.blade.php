@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Quite Light</title>
+	<title>Karellys Costa</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -10,28 +10,48 @@
     <link href="{{asset("assets/plugin-frameworks/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
     <link href="{{asset("assets/fonts/ionicons.css")}}" rel="stylesheet" type="text/css" />
     <link href="{{asset("assets/common/styles.css")}}" rel="stylesheet" type="text/css" />
+    <style>
+    .bg-custom{
+        background: url("{{asset('assets/images/bg3.jpg')}}") no-repeat center;
+        background-size: cover;
+    }
+
+    .bg-layer-2:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 1;
+        background: #ffd601;
+    }
+    .mx-w-600x{
+        max-width: 600px!important;
+    }
+</style>
     @yield("styles")
 </head>
 <body>
 	
     @include("layout.header")
     <div class="slider-main h-800x h-sm-auto pos-relative pt-95 pb-25">
-        <div class="img-bg bg-1 bg-layer-4"></div>
+        <div class="img-bg bg-custom bg-layer-2"></div>
         <div class="container-fluid h-100 mt-xs-50">
             <div class="row h-100">
                 <div class="col-md-1"></div>
                 <div class="col-sm-12 col-md-5 h-100 h-sm-50">
                     <div class="dplay-tbl">
                         <div class="dplay-tbl-cell color-white mtb-30">
-                            <div class="mx-w-400x">
-                                <h5><b>ART</b></h5>
-                                <h1 class="mt-20 mb-30"><b>The Shoddy Science Behind most Pregnancy Advice</b></h1>
-                                <h6><a class="plr-20 btn-brdr-grey color-white" href="#"><b>Continue Reading</b></a></h6>
+                            <div class="mx-w-600x">
+                                <img src="{{asset('assets/images/text-index.png')}}">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 h-sm-50 oflow-hidden swiper-area pos-relative">			
+                <div class="col-sm-12 col-md-6 h-sm-50 oflow-hidden swiper-area pos-relative">	
+                <div><a class="plr-20 btn-brdr-grey color-white" href="#"><b>Conviertete en un Super Super WAO</b></a></div>		
                     <div class="abs-blr pos-sm-static">
                         <div class="row pos-relative mt-50 all-scroll">
                             <div class="swiper-scrollbar resp"></div>
@@ -42,16 +62,17 @@
                                     data-swiper-breakpoints="true" data-scrollbar="true" data-swiper-loop="true"
                                     data-swpr-responsive="[1, 2, 1, 2]">
                                     <div class="swiper-wrapper">
-                                        @foreach($posts as $post)\
+                                        @foreach($hots as $hot)
                                         <div class="swiper-slide">
                                             <div class="bg-white">
-                                                <img src="<?php echo config('app.path_url').$post->images[0]->image ?>" alt="">
+                                                <?php $images = explode(",", $hot->images)?>
+                                                <img src="<?php echo config('app.path_url').$images[0] ?>" alt="">
                                                 <div class="plr-25 ptb-15">
-                                                    <h5 class="color-ash"><b>Posts</b></h5>
+                                                    <h5 class="color-ash"><b>{{$hot->title}}</b></h5>
                                                     <h4 class="mtb-10">
-                                                        <a href="#"><b>{{$post->title}}</b></a></h4>
+                                                        <a href="#"><b>{{$hot->subtitle}}</b></a></h4>
                                                     <ul class="list-li-mr-10 color-lt-black">
-                                                        <li>{{$post->updated_at}}</li>
+                                                        <li>{{$hot->updated_at}}</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -66,8 +87,8 @@
             </div>
         </div>
     </div>
-    
-    @yield("body")	
+    @yield("body")
+    @include("layout.footer")	
     <script src="{{asset("assets/plugin-frameworks/jquery-3.2.1.min.js")}}" type="text/javascript"></script>
     <script src="{{asset("assets/plugin-frameworks/bootstrap.min.js")}}" type="text/javascript"></script>
     <script src="{{asset("assets/plugin-frameworks/swiper.js")}}" type="text/javascript"></script>
