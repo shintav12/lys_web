@@ -73,4 +73,23 @@ class WebController extends Controller
         $template["config"] = $config;
         return view("pages.section", $template);
     }
+
+    public function post($slug){
+        $post = DB::select(DB::raw("SELECT p.*, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
+        FROM  post p 
+        LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'post'
+        WHERE p.slug = '".$slug."'
+        GROUP BY p.id
+        ORDER BY p.id DESC"))[0];
+        $post->content = json_decode($post->content);
+        $post_metas = DB::table('metas')->where('object_id', $post->id)->where('type',"post")->first();
+        $images = explode(",", $post->images);
+
+        $template["item"] = $post;
+        $template["images"] = $images;
+        $template["metas"] = $post_metas;
+
+        return view("pages.post", $template);
+
+    }
 }

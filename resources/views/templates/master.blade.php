@@ -69,7 +69,7 @@
                                                 <div class="plr-25 ptb-15">
                                                     <h5 class="color-ash"><b>{{$hot->title}}</b></h5>
                                                     <h4 class="mtb-10">
-                                                        <a href="#"><b>{{$hot->subtitle}}</b></a></h4>
+                                                    <a href="{{url('/posts/'.$hot->slug)}}"><b>{{$hot->subtitle}}</b></a></h4>
                                                     <ul class="list-li-mr-10 color-lt-black">
                                                         <li>{{$hot->updated_at}}</li>
                                                     </ul>

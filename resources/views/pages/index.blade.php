@@ -36,8 +36,6 @@
 			<div class="row">
 				<div class="col-lg-1"></div>
 				<div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
-					<h4 class="mb-30 mt-20 clearfix"><b>Most Popular Videos</b></h4>
-
 					<div class="row">
 						<div class="col-sm-12 mb-30 swiper-area ">
 							<div class="videoWrapper">
@@ -75,7 +73,7 @@
 											<div class="dplay-tbl">
 												<div class="dplay-tbl-cell">
 													<h5 class="color-ash"><b>{{$posts[0]->title}}</b></h5>
-													<h2 class="mtb-10"><a href="#">
+													<h2 class="mtb-10"><a href="{{url('/posts/'.$posts[0]->slug)}}">
 														<b>{{$posts[0]->subtitle}}</b></a></h2>
 													<ul class="list-li-mr-10 color-lt-black">
 														<li>{{$posts[0]->updated_at}}</li>
@@ -94,7 +92,7 @@
 									<div class="dplay-tbl">
 										<div class="dplay-tbl-cell">
 											<h5 class="color-grey"><b>{{$posts[1]->title}}</b></h5>
-											<h2 class="mtb-10"><a href="#">
+											<h2 class="mtb-10"><a href="{{url('/posts/'.$posts[1]->slug)}}">
 												<b>{{$posts[1]->subtitle}}</b></a></h2>
 											<ul class="list-li-mr-10 color-grey">
 												<li>{{$posts[1]->updated_at}}</li>
@@ -110,7 +108,7 @@
 									<div class="dplay-tbl">
 										<div class="dplay-tbl-cell">
 											<h5 class="color-ash"><b>{{$posts[2]->title}}</b></h5>
-											<h4 class="mtb-10"><a href="#"><b>{{$posts[2]->subtitle}}</b></a></h4>
+											<h4 class="mtb-10"><a href="{{url('/posts/'.$posts[2]->slug)}}"><b>{{$posts[2]->subtitle}}</b></a></h4>
 											<ul class="list-li-mr-10 color-lt-black">
 												<li>{{$posts[2]->updated_at}}</li>
 											</ul>
@@ -124,7 +122,7 @@
 							<div class="card h-100 pos-relative bg-4 bg-layer-4 color-white" style="background: url(<?php echo config('app.path_url').$images[3] ?>) no-repeat center;background-size: cover;">
 								<div class="plr-25 ptb-15">
 									<h5 class="color-grey"><b>{{$posts[3]->title}}</b></h5>
-									<h4 class="mtb-10"><a href="#"><b>{{$posts[3]->subtitle}}</b></a></h4>
+									<h4 class="mtb-10"><a href="{{url('/posts/'.$posts[3]->slug)}}"><b>{{$posts[3]->subtitle}}</b></a></h4>
 									<ul class="list-li-mr-10 color-grey">
 										<li>{{$posts[3]->updated_at}}</li>
 									</ul>
@@ -136,7 +134,7 @@
 							<div class="card h-100 pos-relative bg-4 bg-layer-4 color-white" style="background: url(<?php echo config('app.path_url').$images[3] ?>) no-repeat center;background-size: cover;">
 								<div class="plr-25 ptb-15">
 									<h5 class="color-grey"><b>{{$posts[4]->title}}</b></h5>
-									<h4 class="mtb-10"><a href="#"><b>{{$posts[4]->subtitle}}</b></a></h4>
+									<h4 class="mtb-10"><a href="{{url('/posts/'.$posts[4]->slug)}}"><b>{{$posts[4]->subtitle}}</b></a></h4>
 									<ul class="list-li-mr-10 color-grey">
 										<li>{{$posts[4]->updated_at}}</li>
 									</ul>
@@ -150,13 +148,13 @@
 								<div class="card h-100 min-h-350x">
 									<div class="bg-white h-100">
 									<?php $images = explode(",", $video->images)?>
-										<div class="h-50 bg-10"style="background: url(<?php echo config('app.path_url').$images[2] ?>) no-repeat center; background-size: cover;"></div>
+										<div class="h-50 bg-10" style="background: url(<?php echo config('app.path_url').$images[2] ?>) no-repeat center; background-size: cover;"></div>
 										<div class="plr-25 ptb-15 h-50">
 											<div class="dplay-tbl">
 												<div class="dplay-tbl-cell">
 													<h5 class="color-ash"><b>{{$video->title}}</b></h5>
 													<h4 class="mtb-10">
-														<a href="#"><b>{{$video->subtitle}}</b></a></h4>
+														<a href="{{url('/posts/'.$video->slug)}}"><b>{{$video->subtitle}}</b></a></h4>
 													<ul class="list-li-mr-10 color-lt-black">
 														<li>{{$video->updated_at}}</li>
 													</ul>
