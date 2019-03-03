@@ -127,39 +127,7 @@ class WebController extends Controller
         return view("pages.video", $template);
 
     }
-
-    public static function returnObj($type, $id){
-        $obj = [];
-        switch($slug){
-            case "post":{
-                $obj = DB::select(DB::raw("SELECT p.*,GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
-                                            FROM post p 
-                                            LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'post'
-                                            WHERE p.id = ".$id));
-            }
-            case "video":{
-                $obj = DB::select(DB::raw("SELECT p.*,GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
-                                            FROM videos p 
-                                            LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'video'
-                                            WHERE p.id = ".$id));
-            }
-            case "frebie":{
-                $obj = DB::select(DB::raw("SELECT p.*,GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
-                                            FROM frebies p 
-                                            LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'video'
-                                            WHERE p.id = ".$id));
-            }
-            case "product":{
-                $obj = DB::select(DB::raw("SELECT p.*,GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
-                                            FROM products p 
-                                            LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'product'
-                                            WHERE p.id = ".$id));
-            }
-        }
-
-        return $obj;
-    }
-
+    
     public function tags($slug){
         $tag_s = Tag::where("slug",$slug)->first();
         $tags = DB::select(DB::raw("SELECT ot.*
