@@ -67,7 +67,7 @@
 		<div class="container-fluid h-100 mt-xs-0">
 			<div class="dplay-tbl">
                 <div class="dplay-tbl-cell color-white text-center">
-                    <h1 class="ptb-50"><b>{{$item->name}}</b></h1>
+                    <h1 class="ptb-50"><b>{{$item->title}}</b></h1>
                 </div>
 			</div>
 		</div>
