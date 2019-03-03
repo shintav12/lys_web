@@ -168,11 +168,6 @@ class WebController extends Controller
             }
     
         }
-        
-        //var_dump($tags);
-        //var_dump($items);
-        //die();
-
         $template["items"] = $items;
         $template["tag"] = $tag_s;
 
