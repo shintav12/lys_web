@@ -51,16 +51,16 @@
 							<div class="card h-100 bg-white">
 								<div class="plr-25 ptb-15">
 									<h5 class="color-ash"><b>{{$phrase->title}}</b></h5>
-									<h4 class="mtb-10"><a href="#"><b>{{$phrase->text}}</b></a></h4>
+									<h4 class="mtb-10"><b>{{$phrase->text}}</b></a></h4>
 									<ul class="list-li-mr-10 color-lt-black">
-									<li><?php echo(date("d/m/Y", strtotime($item->updated_at)))?></li>
+									<li><?php echo(date("d/m/Y", strtotime($phrase->updated_at)))?></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						@endforeach
 					</div>
-
+					@if(isset($posts[0]))
 					<div class="row">
 						<div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 mb-30">
 							<div class="card h-100 h-xs-500x">
@@ -76,7 +76,7 @@
 													<h2 class="mtb-10"><a href="{{url('/posts/'.$posts[0]->slug)}}">
 														<b>{{$posts[0]->subtitle}}</b></a></h2>
 													<ul class="list-li-mr-10 color-lt-black">
-														<li>{{$posts[0]->updated_at}}</li>
+													<li><?php echo(date("d/m/Y", strtotime($posts[0]->updated_at)))?></li>
 													</ul>
 												</div>
 											</div>
@@ -85,6 +85,8 @@
 								</div>
 							</div>
 						</div>
+						@endif
+						@if(isset($posts[1]))
 						<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
 							<?php $images = explode(",",$posts[1]->images)?>
 							<div class="card pos-relative h-100 bg-8 bg-layer-4 color-white" style="background: url(<?php echo config('app.path_url').$images[4] ?>) no-repeat center;background-size: cover;">
@@ -95,13 +97,15 @@
 											<h2 class="mtb-10"><a href="{{url('/posts/'.$posts[1]->slug)}}">
 												<b>{{$posts[1]->subtitle}}</b></a></h2>
 											<ul class="list-li-mr-10 color-grey">
-											<li><?php echo(date("d/m/Y", strtotime($item->updated_at)))?></li>
+											<li><?php echo(date("d/m/Y", strtotime($posts[1]->updated_at)))?></li>
 											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						@endif
+						@if(isset($posts[2]))
 						<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4  mb-30">
 							<div class="card h-100 bg-white">
 								<div class="plr-25 ptb-15 h-100">
@@ -110,13 +114,15 @@
 											<h5 class="color-ash"><b>{{$posts[2]->title}}</b></h5>
 											<h4 class="mtb-10"><a href="{{url('/posts/'.$posts[2]->slug)}}"><b>{{$posts[2]->subtitle}}</b></a></h4>
 											<ul class="list-li-mr-10 color-lt-black">
-											<li><?php echo(date("d/m/Y", strtotime($item->updated_at)))?></li>
+											<li><?php echo(date("d/m/Y", strtotime($posts[2]->updated_at)))?></li>
 											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						@endif
+						@if(isset($posts[3]))
 						<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
 							<?php $images = explode(",",$posts[3]->images)?>
 							<div class="card h-100 pos-relative bg-4 bg-layer-4 color-white" style="background: url(<?php echo config('app.path_url').$images[3] ?>) no-repeat center;background-size: cover;">
@@ -124,11 +130,13 @@
 									<h5 class="color-grey"><b>{{$posts[3]->title}}</b></h5>
 									<h4 class="mtb-10"><a href="{{url('/posts/'.$posts[3]->slug)}}"><b>{{$posts[3]->subtitle}}</b></a></h4>
 									<ul class="list-li-mr-10 color-grey">
-									<li><?php echo(date("d/m/Y", strtotime($item->updated_at)))?></li>
+									<li><?php echo(date("d/m/Y", strtotime($posts[3]->updated_at)))?></li>
 									</ul>
 								</div>
 							</div>
 						</div>
+						@endif
+						@if(isset($posts[4]))
 						<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
 							<?php $images = explode(",",$posts[4]->images)?>
 							<div class="card h-100 pos-relative bg-4 bg-layer-4 color-white" style="background: url(<?php echo config('app.path_url').$images[3] ?>) no-repeat center;background-size: cover;">
@@ -136,11 +144,12 @@
 									<h5 class="color-grey"><b>{{$posts[4]->title}}</b></h5>
 									<h4 class="mtb-10"><a href="{{url('/posts/'.$posts[4]->slug)}}"><b>{{$posts[4]->subtitle}}</b></a></h4>
 									<ul class="list-li-mr-10 color-grey">
-									<li><?php echo(date("d/m/Y", strtotime($item->updated_at)))?></li>
+									<li><?php echo(date("d/m/Y", strtotime($posts[4]->updated_at)))?></li>
 									</ul>
 								</div>
 							</div>
 						</div>
+						@endif
 					</div>
 					<div class="row">
 						@foreach($videos as $video)
@@ -156,7 +165,7 @@
 													<h4 class="mtb-10">
 														<a href="{{url('/posts/'.$video->slug)}}"><b>{{$video->subtitle}}</b></a></h4>
 													<ul class="list-li-mr-10 color-lt-black">
-													<li><?php echo(date("d/m/Y", strtotime($item->updated_at)))?></li>
+													<li><?php echo(date("d/m/Y", strtotime($video->updated_at)))?></li>
 													</ul>
 												</div>
 											</div>
