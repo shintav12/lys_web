@@ -26,8 +26,8 @@ class WebController extends Controller
             GROUP BY v.id
             ORDER BY v.id DESC 
             LIMIT 7"));
+            
         $phrases = Phrase::orderBy("id","DESC")->limit(3)->get();
-
         $hots = DB::select(DB::raw("select * from (
             (SELECT v.title,v.subtitle, v.slug, v.updated_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'videos' as type 
                     FROM videos v
@@ -56,6 +56,7 @@ class WebController extends Controller
         $template["posts"] = $posts;
         $template["videos"] = $videos;
         $template["hots"] = $hots;
+
         return view("pages.index", $template);
     }
 
@@ -69,7 +70,7 @@ class WebController extends Controller
         LEFT JOIN images i ON p.id = i.object_id and i.object_type = '".$config['type']."'
         GROUP BY p.id
         ORDER BY p.id DESC"));    
-        $template = [];
+        $template = []; 
         $template["items"] = $items;
         $template["config"] = $config;
         $template["slug"] = $slug;
@@ -89,23 +90,31 @@ class WebController extends Controller
         JOIN object_tag ot on ot.tag_id = t.id
         WHERE ot.object_type = 'post'
         AND ot.object_id = ".$post->id));
+        $related_items = DB::select(DB::raw("SELECT p.*, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
+        FROM  post p 
+        LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'post'
+        WHERE p.slug != '".$slug."'
+        GROUP BY p.id
+        ORDER BY p.id DESC
+        LIMIT 3"));
         $post->content = json_decode($post->content);
         $post_metas = DB::table('metas')->where('object_id', $post->id)->where('type',"post")->first();
+        
         $images = explode(",", $post->images);
-
         $template["tags"] = $tags;
         $template["item"] = $post;
         $template["images"] = $images;
+        $template["slug"] = "posts";
         $template["metas"] = $post_metas;
+        $template["related_items"] = $related_items;
 
         return view("pages.post", $template);
-
     }
 
     public function video($slug){
         $video = DB::select(DB::raw("SELECT p.*, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
         FROM  videos p 
-        LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'post'
+        LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'video'
         WHERE p.slug = '".$slug."'
         GROUP BY p.id
         ORDER BY p.id DESC"))[0];
@@ -118,14 +127,21 @@ class WebController extends Controller
         $video->video = json_decode($video->video);
         $item_metas = DB::table('metas')->where('object_id', $video->id)->where('type',"video")->first();
         $images = explode(",", $video->images);
-
+        $related_items = DB::select(DB::raw("SELECT p.*, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
+        FROM  videos p 
+        LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'video'
+        WHERE p.slug != '".$slug."'
+        GROUP BY p.id
+        ORDER BY p.id DESC
+        LIMIT 3"));
         $template["tags"] = $tags;
         $template["item"] = $video;
         $template["images"] = $images;
+        $template["slug"] = "videos";
         $template["metas"] = $item_metas;
+        $template["related_items"] = $related_items;
 
         return view("pages.video", $template);
-
     }
     
     public function tags($slug){
@@ -134,6 +150,7 @@ class WebController extends Controller
         FROM object_tag ot
         WHERE ot.tag_id = ".$tag_s->id."
         LIMIT 9"));
+
         $items = [];
         foreach($tags as $tag){
             switch($tag->object_type){
@@ -166,8 +183,8 @@ class WebController extends Controller
                     break;
                 }
             }
-    
         }
+
         $template["items"] = $items;
         $template["tag"] = $tag_s;
 

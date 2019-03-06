@@ -4,6 +4,12 @@
 @endsection
 
 @section("scripts")
+<script>
+	$(".item").click(function(){
+		var url = $(this).data("url");
+		window.location.href = url;
+	});
+</script>
 @endsection
 
 @section("body")
@@ -14,7 +20,7 @@
                 <div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
                     <div class="row">
                     @foreach($items as $item)
-							<div class=" col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
+							<div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" data-url="<?php echo url('/'.$slug.'/'.$item->slug) ?>" >
 								<div class="card h-100 min-h-350x">
 									<div class="bg-white h-100">
 									<?php $images = explode(",", $item->images)?>
@@ -26,7 +32,7 @@
 													<h4 class="mtb-10">
 														<a href="<?php echo url('/'.$item->type.'/'.$item->slug) ?>"><b>{{$item->subtitle}}</b></a></h4>
 													<ul class="list-li-mr-10 color-lt-black">
-														<li>{{$item->updated_at}}</li>
+													<li><?php echo(date("d/m/Y", strtotime($item->updated_at)))?></li>
 													</ul>
 												</div>
 											</div>
