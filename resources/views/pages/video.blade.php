@@ -1,6 +1,11 @@
 @extends("templates.video")
 
 @section("styles")
+<style>
+	p a {
+		color: #ffc107 !important;
+	}
+</style>
 @endsection
 
 @section("scripts")
