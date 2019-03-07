@@ -5,11 +5,25 @@
 	p a {
 		color: #ffc107 !important;
 	}
+	.content-post ul li{
+		list-style: inherit;
+		display: list-item;
+		font-size: inherit;
+	}
+	.content-post ul {
+		padding-left:40px;
+		
+	}
 </style>
 @endsection
 
 @section("scripts")
-
+<script>
+	$(".item").click(function(){
+		var url = $(this).data("url");
+		window.location.href = url;
+	});
+</script>
 @endsection
 
 @section("body")

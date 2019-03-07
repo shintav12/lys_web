@@ -10,6 +10,12 @@
 
 @section("scripts")
 <script>
+	$(".item").click(function(){
+		var url = $(this).data("url");
+		window.location.href = url;
+	});
+</script>
+<script>
 	$fluidEl = $("body");
 	var $allVideos = $("iframe[src^='//www.youtube.com']"),
 
@@ -62,7 +68,7 @@
                             <?php echo($item->video)?>
                         </div>
 					</div>		
-					<div class="mt-40 mt-sm-10">
+					<div class="mt-40 mt-sm-10 content-post">
 						<?php echo($item->text)?>
                     </div>			
                     @include("layout.tags")
