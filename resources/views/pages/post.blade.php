@@ -26,14 +26,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-12 col-md-6">
+						<!-- <div class="col-sm-12 col-md-6">
 							<ul class="color-ash lh-70 text-right text-sm-left list-a-plr-10 font-13">
-								<li><b>SHARE</b></li>
+								<li><b>COMPARTIR</b></li>
 								<li><a href="#"><i class="color-facebook ion-social-facebook"></i></a></li>
 								<li><a href="#"><i class="color-twitter ion-social-twitter"></i></a></li>
 								<li><a href="#"><i class="color-google ion-social-google"></i></a></li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 					<div class="mt-40 mt-sm-10 content-post">
 						<?php echo($item->content)?>
