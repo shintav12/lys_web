@@ -26,6 +26,7 @@
 		color: white;
 	}
 	</style>
+	@yield("styles")
 </head>
 <body>
 	@include("layout.header")

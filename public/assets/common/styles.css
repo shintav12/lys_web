@@ -433,6 +433,131 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
     }
 }
 
+.i-bordered,
+.i-circled,
+.i-plain,
+.i-rounded,
+.social-icon {
+    display: block;
+    float: left;
+    margin: 4px 11px 7px 0;
+    text-align: center!important;
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    font-style: normal
+}
+
+.si-colored.social-icon,
+.social-icon:hover {
+    border-color: transparent
+}
+
+body:not(.device-touch) .social-icon i {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.social-icon i:last-child {
+    color: #fff!important
+}
+
+.social-icon:hover i:first-child {
+    margin-top: -38px
+}
+
+.social-icon.si-large:hover i:first-child {
+    margin-top: -54px
+}
+
+.social-icon.si-small:hover i:first-child {
+    margin-top: -30px
+}
+
+.social-icon:hover {
+    color: #555
+}
+
+.social-icon i {
+    display: block;
+    position: relative
+}
+
+.social-icon.si-large {
+    margin: 0 10px 10px 0;
+    width: 56px;
+    height: 56px;
+    font-size: 30px;
+    line-height: 54px!important
+}
+
+.social-icon.si-small {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 30px!important
+}
+
+.social-icon {
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 38px!important;
+    color: #555;
+    text-shadow: none;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    overflow: hidden
+}
+
+body:not(.device-touch) .social-icon {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.dark .social-icon {
+    color: #DDD !important;
+    border-color: #DDD;
+}
+
+.dark #footer .social-icon.si-borderless,
+#footer.dark .social-icon.si-borderless {
+    color: #555 !important;
+}
+
+.dark #top-social li {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark #top-social li a {
+    color: #BBB;
+}
+
+.dark .si-dark {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #DDD !important;
+    border-color: transparent;
+}
+
+.dark .si-light {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #EEE !important;
+    border-color: transparent;
+}
+
+.dark .social-icon i:last-child {
+    color: #FFF !important;
+}
+
+.dark .social-icon:hover {
+    color: #FFF !important;
+    border-color: transparent;
+}
+
 
 /* RESPONSIVE */
 

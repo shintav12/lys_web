@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">	
-    <link href="{{asset("assets/plugin-frameworks/swiper.css")}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset("assets/plugin-frameworks/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset("assets/fonts/ionicons.css")}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset("assets/common/styles.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/plugin-frameworks/swiper.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/plugin-frameworks/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/fonts/ionicons.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/css/font-icons.css')}}" rel="stylesheet"  type="text/css" />
+    <link href="{{asset('assets/css/animate.css')}}" rel="stylesheet"  type="text/css" />
+    <link href="{{asset('assets/common/styles.css')}}" rel="stylesheet" type="text/css" />
     <style>
     .bg-custom{
         background: url("{{asset('assets/images/bg3.jpg')}}") no-repeat center;

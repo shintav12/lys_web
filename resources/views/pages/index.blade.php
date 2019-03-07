@@ -37,15 +37,6 @@
 				<div class="col-lg-1"></div>
 				<div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
 					<div class="row">
-						<div class="col-sm-12 mb-30 swiper-area ">
-							<div class="videoWrapper">
-								<?php echo json_decode($videos[0]->video)?>
-								<?php unset($videos[0])?>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
 						@foreach($phrases as $phrase)
 						<div class="col-md-6 col-lg-6 col-xl-4 mb-30">
 							<div class="card h-100 bg-white">
@@ -60,6 +51,18 @@
 						</div>
 						@endforeach
 					</div>
+
+					<div class="row">
+						<div class="col-sm-12 mb-30 swiper-area ">
+							<div class="videoWrapper">
+								<?php echo json_decode($videos[0]->video)?>
+								<?php unset($videos[0])?>
+							</div>
+						</div>
+					</div>
+
+					
+					<h4 class="mb-30 mt-20 clearfix"><b>QUÉ HAY DE NUEVO EN MI CABEZA</b></h4>
 					@if(isset($posts[0]))
 					<div class="row">
 						<div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 mb-30">
@@ -151,6 +154,7 @@
 						</div>
 						@endif
 					</div>
+					<h4 class="mb-30 mt-20 clearfix"><b>LOS VIDEOS CALIENTITOS</b></h4>
 					<div class="row">
 						@foreach($videos as $video)
 							<div class=" col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">

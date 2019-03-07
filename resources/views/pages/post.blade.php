@@ -1,9 +1,15 @@
 @extends("templates.post")
 
 @section("styles")
+<style>
+	p a {
+		color: #ffc107 !important;
+	}
+</style>
 @endsection
 
 @section("scripts")
+
 @endsection
 
 @section("body")
@@ -29,7 +35,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="mt-40 mt-sm-10">
+					<div class="mt-40 mt-sm-10 content-post">
 						<?php echo($item->content)?>
 					</div>			
 					@include("layout.tags")
