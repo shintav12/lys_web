@@ -93,7 +93,7 @@
 					<h4 class="mb-30 mt-20 clearfix"><b>QUÉ HAY DE NUEVO EN MI CABEZA</b></h4>
 					@if(isset($posts[0]))
 					<div class="row">
-					<div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer" data-url="{{url('/videos/'.$posts[0]->slug)}}">
+					<div class="item col-sm-12 col-md-12 col-lg-6 col-xl-8 mb-30" style="cursor:pointer" data-url="{{url('/posts/'.$posts[0]->slug)}}">
 							<div class="card h-100 h-xs-500x">
 								<div class="sided-half sided-xs-half h-100 bg-white">
 									<div class="s-left w-50 w-xs-100 h-100 h-xs-50 pos-relative">
@@ -118,7 +118,7 @@
 						</div>
 						@endif
 						@if(isset($posts[1]))
-						<div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer" data-url="{{url('/videos/'.$posts[1]->slug)}}">
+						<div class="item col-sm-12 col-md-12 col-lg-6 col-xl-4 mb-30" style="cursor:pointer" data-url="{{url('/posts/'.$posts[1]->slug)}}">
 							<?php $images = explode(",",$posts[1]->images)?>
 							<div class="card pos-relative h-100 bg-8 bg-layer-4 color-white" style="background: url(<?php echo config('app.path_url').$images[4] ?>) no-repeat center;background-size: cover;">
 								<div class="plr-25 ptb-15 h-100">
@@ -137,7 +137,7 @@
 						</div>
 						@endif
 						@if(isset($posts[2]))
-						<div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer" data-url="{{url('/videos/'.$posts[2]->slug)}}">
+						<div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer" data-url="{{url('/posts/'.$posts[2]->slug)}}">
 							<div class="card h-100 bg-white">
 								<div class="plr-25 ptb-15 h-100">
 									<div class="dplay-tbl">
@@ -154,7 +154,7 @@
 						</div>
 						@endif
 						@if(isset($posts[3]))
-						<div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer" data-url="{{url('/videos/'.$posts[3]->slug)}}">
+						<div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer" data-url="{{url('/posts/'.$posts[3]->slug)}}">
 							<?php $images = explode(",",$posts[3]->images)?>
 							<div class="card h-100 pos-relative bg-4 bg-layer-4 color-white" style="background: url(<?php echo config('app.path_url').$images[3] ?>) no-repeat center;background-size: cover;">
 								<div class="plr-25 ptb-15">
@@ -168,7 +168,7 @@
 						</div>
 						@endif
 						@if(isset($posts[4]))
-						<div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer" data-url="{{url('/videos/'.$posts[4]->slug)}}">
+						<div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer" data-url="{{url('/posts/'.$posts[4]->slug)}}">
 							<?php $images = explode(",",$posts[4]->images)?>
 							<div class="card h-100 pos-relative bg-4 bg-layer-4 color-white" style="background: url(<?php echo config('app.path_url').$images[3] ?>) no-repeat center;background-size: cover;">
 								<div class="plr-25 ptb-15">
