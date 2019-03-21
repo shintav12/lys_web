@@ -65,6 +65,7 @@ class WebController extends Controller
         if( $slug == "posts" ) { $config["table"] = "post"; $config["type"] = "post"; $config["image"] = "portada-posts.png"; $config["title"] = "Posts"; }
         if( $slug == "videos" ) { $config["table"] = "videos"; $config["type"] = "video"; $config["image"] = "portada-videos.png"; $config["title"] = "Videos"; }
         if( $slug == "freebies" ) { $config["table"] = "frebies"; $config["type"] = "frebie"; $config["image"] = "portada-freebie.png"; $config["title"] = "Freebies"; }
+        if( $slug == "store" ) { $config["table"] = "products"; $config["type"] = "product"; $config["image"] = "portada-tienda.png"; $config["title"] = "Tienda"; }
         $items = DB::select(DB::raw("SELECT p.*, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
         FROM  ".$config['table']." p 
         LEFT JOIN images i ON p.id = i.object_id and i.object_type = '".$config['type']."'
@@ -142,6 +143,39 @@ class WebController extends Controller
         $template["related_items"] = $related_items;
 
         return view("pages.video", $template);
+    }
+
+    public function product($slug){
+        $post = DB::select(DB::raw("SELECT p.*, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
+        FROM  products p 
+        LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'product'
+        WHERE p.slug = '".$slug."'
+        GROUP BY p.id
+        ORDER BY p.id DESC"))[0];
+        $tags = DB::select(DB::raw("SELECT t.*
+        FROM tags t
+        JOIN object_tag ot on ot.tag_id = t.id
+        WHERE ot.object_type = 'product'
+        AND ot.object_id = ".$post->id));
+        $related_items = DB::select(DB::raw("SELECT p.*, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
+        FROM  products p 
+        LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'product'
+        WHERE p.slug != '".$slug."'
+        GROUP BY p.id
+        ORDER BY p.id DESC
+        LIMIT 3"));
+        $post->content = json_decode($post->content);
+        $post_metas = DB::table('metas')->where('object_id', $post->id)->where('type',"product")->first();
+
+        $images = explode(",", $post->images);
+        $template["tags"] = $tags;
+        $template["item"] = $post;
+        $template["images"] = $images;
+        $template["slug"] = "product";
+        $template["metas"] = $post_metas;
+        $template["related_items"] = $related_items;
+
+        return view("pages.store", $template);
     }
     
     public function tags($slug){
