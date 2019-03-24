@@ -30,7 +30,7 @@
 					<div class="dplay-tbl">
 						<div class="dplay-tbl-cell">
 							<div class="form-block form-brdr-b mx-w-400x m-auto">
-								<div><a class="plr-20 btn-brdr-grey color-white" href="https://www.youtube.com/channel/UC8OmB2Ln7n7hcH1j_5uXIFg?sub_confirmation=1"><b>Conviertete en un Super WAO</b></a></div>		
+								<div style="text-align: center"><a class="plr-20 btn-brdr-grey color-white" href="https://www.youtube.com/channel/UC8OmB2Ln7n7hcH1j_5uXIFg?sub_confirmation=1"><b>Conviertete en un Super WAO</b></a></div>
 							</div>
 						</div>
 					</div>

@@ -34,6 +34,10 @@
 @section("scripts")
     <script src="{{asset('assets/plugin-frameworks/owl.carousel.min.js')}}"></script>
     <script>
+        $(document).ready(function(){
+            var text = document.getElementsByClassName('yt-uix-button')[0].getAttribute("data-is-subscribed");
+            console.log(text);
+        });
         $(".item_click").click(function(){
             var url = $(this).data("url");
             window.location.href = url;
@@ -45,7 +49,7 @@
             center: true
         })
     </script>
-
+    <script src="https://apis.google.com/js/platform.js"></script>
 @endsection
 
 @section("body")
@@ -81,13 +85,19 @@
                     <div class="brdr-grey-1 mt-40 mt-sm-20"></div>
                     <div class="mt-20 mt-sm-10" style="display: flex; align-items: center; justify-content: space-between">
                         <div style="font-size: 1.3em; color: gray; padding-right: 15px">
-                            <b>Recoge tu WAO regalo aqu&iacute;:</b>
+                            <b>Recoge tu WAO regalo aqu&iacute y ayuda a la pipol suscrbiendote:</b>
+                        </div>
+
+                    </div>
+                    <div class="mt-20 mt-sm-10" style="display: flex; align-items: center; justify-content: space-between; flex-direction: row">
+                        <div style="display: flex; align-items: center;">
+                            <div class="g-ytsubscribe" data-channelid="UC8OmB2Ln7n7hcH1j_5uXIFg" data-layout="full" data-count="hidden"></div>
                         </div>
                         <div style="display: flex; align-items: center;">
                             <a href="{{config('app.path_url').$item->download}}" class="plr-70 btn-brdr-grey color-white" style="color: white"><b>DESCARGAR</b></a>
                         </div>
                     </div>
-                    <div class="brdr-grey-1 mt-20 mt-sm-20"></div>
+                    <div class="brdr-grey-1 mt-40 mt-sm-20"></div>
                     <div class="mt-40 mt-sm-10 content-post">
                         <?php echo($item->content)?>
                     </div>
