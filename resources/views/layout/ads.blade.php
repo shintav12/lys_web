@@ -4,22 +4,14 @@
             <div class="mx-w-md-400x mlr-md-auto">
                 <div class="mb-50">
                     <h5 class="mb-30"><b>TOP STORIES</b></h5>
-                    <div class="sided-80x mb-20">
-                        <div class="s-left">
-                            <img src="images/top_3_120x120.jpg" alt="">
-                        </div>
-                        <div class="s-right">
-                            <h5 class="pt-5"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-                        </div>
-                    </div>
-                    <div class="sided-80x mb-20">
-                        <div class="s-left">
-                            <img src="images/top_4_120x120.jpg" alt="">
-                        </div>
-                        <div class="s-right">
-                            <h5 class="pt-5"><a href="#"><b>I Got off Addrall and Xanax Using Psilocybon</b></a></h5>
-                        </div>
-                    </div>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:120px;height:240px"
+                        data-ad-client="ca-pub-2895656582028706"
+                        data-ad-slot="9261257983"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>                   
             </div>
         </div>
