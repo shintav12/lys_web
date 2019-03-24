@@ -81,7 +81,7 @@
                     <div class="brdr-grey-1 mt-40 mt-sm-20"></div>
                     <div class="mt-20 mt-sm-10" style="display: flex; align-items: center;">
                         <div style="display: flex; align-items: center;">
-                            <a href="{{url('freebie/download/'.$item->download)}}" target="_blank" class="plr-70 btn-brdr-grey color-white" style="color: white"><b>COMPRAR</b></a>
+                            <a href="{{url('freebie/download/'.$item->download)}}" class="plr-70 btn-brdr-grey color-white" style="color: white"><b>COMPRAR</b></a>
                         </div>
                     </div>
                     <div class="brdr-grey-1 mt-20 mt-sm-20"></div>
