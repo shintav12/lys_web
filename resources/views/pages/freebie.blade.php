@@ -79,9 +79,9 @@
                         @endforeach
                     </div>
                     <div class="brdr-grey-1 mt-40 mt-sm-20"></div>
-                    <div class="mt-20 mt-sm-10" style="display: flex; align-items: center;">
+                    <div class="mt-20 mt-sm-10" style="display: flex; align-items: center; justify-content: space-around">
                         <div style="display: flex; align-items: center;">
-                            <a href="{{config('app.path_url').$item->download}}" class="plr-70 btn-brdr-grey color-white" style="color: white"><b>COMPRAR</b></a>
+                            <a href="{{config('app.path_url').$item->download}}" class="plr-70 btn-brdr-grey color-white" style="color: white"><b>DESCARGAR</b></a>
                         </div>
                     </div>
                     <div class="brdr-grey-1 mt-20 mt-sm-20"></div>
