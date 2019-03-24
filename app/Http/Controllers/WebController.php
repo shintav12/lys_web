@@ -177,7 +177,46 @@ class WebController extends Controller
 
         return view("pages.store", $template);
     }
-    
+
+    public function freebie($slug){
+        $post = DB::select(DB::raw("SELECT p.*, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
+        FROM  frebies p 
+        LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'frebie'
+        WHERE p.slug = '".$slug."'
+        GROUP BY p.id
+        ORDER BY p.id DESC"))[0];
+        $tags = DB::select(DB::raw("SELECT t.*
+        FROM tags t
+        JOIN object_tag ot on ot.tag_id = t.id
+        WHERE ot.object_type = 'frebie'
+        AND ot.object_id = ".$post->id));
+        $related_items = DB::select(DB::raw("SELECT p.*, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images 
+        FROM  frebies p 
+        LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'frebie'
+        WHERE p.slug != '".$slug."'
+        GROUP BY p.id
+        ORDER BY p.id DESC
+        LIMIT 3"));
+        $post->content = json_decode($post->content);
+        $post_metas = DB::table('metas')->where('object_id', $post->id)->where('type',"frebie")->first();
+
+        $images = explode(",", $post->images);
+        $template["tags"] = $tags;
+        $template["item"] = $post;
+        $template["images"] = $images;
+        $template["slug"] = "freebies";
+        $template["metas"] = $post_metas;
+        $template["related_items"] = $related_items;
+
+        return view("pages.freebie", $template);
+    }
+
+    public function download($slug){
+        $path = config('path_archive').$slug;
+        return response()->download($path);
+
+    }
+
     public function tags($slug){
         $tag_s = Tag::where("slug",$slug)->first();
         $tags = DB::select(DB::raw("SELECT ot.*

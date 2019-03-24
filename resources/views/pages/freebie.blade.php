@@ -1,4 +1,4 @@
-@extends("templates.store")
+@extends("templates.freebie")
 
 @section("styles")
     <link href="{{asset("assets/plugin-frameworks/assets/owl.carousel.min.css")}}" rel="stylesheet" type="text/css" />
@@ -63,12 +63,12 @@
                             </div>
                         </div>
                         {{--<div class="col-sm-12 col-md-6">--}}
-                            {{--<ul class="color-ash lh-70 text-right text-sm-left list-a-plr-10 font-13">--}}
-                                {{--<li><b>COMPARTIR</b></li>--}}
-                                {{--<li><a href="#"><i class="color-facebook ion-social-facebook"></i></a></li>--}}
-                                {{--<li><a href="#"><i class="color-twitter ion-social-twitter"></i></a></li>--}}
-                                {{--<li><a href="#"><i class="color-google ion-social-google"></i></a></li>--}}
-                            {{--</ul>--}}
+                        {{--<ul class="color-ash lh-70 text-right text-sm-left list-a-plr-10 font-13">--}}
+                        {{--<li><b>COMPARTIR</b></li>--}}
+                        {{--<li><a href="#"><i class="color-facebook ion-social-facebook"></i></a></li>--}}
+                        {{--<li><a href="#"><i class="color-twitter ion-social-twitter"></i></a></li>--}}
+                        {{--<li><a href="#"><i class="color-google ion-social-google"></i></a></li>--}}
+                        {{--</ul>--}}
                         {{--</div>--}}
                     </div>
                     <div class="owl-carousel">
@@ -79,13 +79,9 @@
                         @endforeach
                     </div>
                     <div class="brdr-grey-1 mt-40 mt-sm-20"></div>
-                    <div class="mt-20 mt-sm-10" style="display: flex; align-items: center; justify-content: space-between;">
-                        <div style="font-size: 1.3em; color: gray; padding-right: 15px">
-                            <b>Llevatelo a solo:</b>
-                        </div>
-                        <div style="display: flex; align-items: center; justify-content: space-between">
-                            <b style="font-size: 1.3em; color: gray; padding-right: 15px">${{$item->price}}</b>
-                            <a href="{{$item->link_amazon}}" target="_blank" class="plr-70 btn-brdr-grey color-white" style="color: white"><b>COMPRAR</b></a>
+                    <div class="mt-20 mt-sm-10" style="display: flex; align-items: center;">
+                        <div style="display: flex; align-items: center;">
+                            <a href="{{url('freebie/download/'.$item->download)}}" target="_blank" class="plr-70 btn-brdr-grey color-white" style="color: white"><b>COMPRAR</b></a>
                         </div>
                     </div>
                     <div class="brdr-grey-1 mt-20 mt-sm-20"></div>
