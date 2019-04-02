@@ -3,12 +3,14 @@
         <div class="col-md-12 col-lg-8">
             <div class="mx-w-md-400x mlr-md-auto">
                 <div class="mb-50">
-                    <h5 class="mb-30"><b>TOP STORIES</b></h5>
                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- TOP STORIE -->
                     <ins class="adsbygoogle"
-                        style="display:inline-block;width:120px;height:240px"
+                        style="display:block"
                         data-ad-client="ca-pub-2895656582028706"
-                        data-ad-slot="9261257983"></ins>
+                        data-ad-slot="5722559537"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
                     <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
