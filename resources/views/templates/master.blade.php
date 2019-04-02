@@ -82,16 +82,18 @@
                                         @endforeach
                                         <div class="swiper-slide">
                                             <div class="bg-white">
-                                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                                                <ins class="adsbygoogle"
-                                                    style="display:block"
-                                                    data-ad-format="fluid"
-                                                    data-ad-layout-key="-6z+d5-2s-2t+oy"
-                                                    data-ad-client="ca-pub-2895656582028706"
-                                                    data-ad-slot="1416004088"></ins>
-                                                <script>
-                                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                                                </script>
+                                                <div class="plr-25 ptb-15">
+                                                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                                    <ins class="adsbygoogle"
+                                                        style="display:block"
+                                                        data-ad-format="fluid"
+                                                        data-ad-layout-key="-6z+d5-2s-2t+oy"
+                                                        data-ad-client="ca-pub-2895656582028706"
+                                                        data-ad-slot="1416004088"></ins>
+                                                    <script>
+                                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                                    </script>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
