@@ -19,12 +19,17 @@
                 <div class="col-lg-1"></div>
                 <div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
                     <div class="row">
-                    @foreach($items as $item)
+                    	@foreach($items as $item)
 							<div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer"  data-url="<?php echo url('/'.$slug.'/'.$item->slug) ?>" >
 								<div class="card h-100 min-h-350x">
 									<div class="bg-white h-100">
-									<?php $images = explode(",", $item->images)?>
-										<div class="h-50 bg-10"style="background: url(<?php echo config('app.path_url').$images[2] ?>) no-repeat center; background-size: cover;"></div>
+									<?php 
+										$images = explode(",", $item->images);
+										$pos = 2;
+										if($slug == "store" && count($images) < 3){
+											$pos = count($images) - 1;		
+										}?>
+										<div class="h-50 bg-10"style="background: url(<?php echo config('app.path_url').$images[$pos] ?>) no-repeat center; background-size: cover;"></div>
 										<div class="plr-25 ptb-15 h-50">
 											<div class="dplay-tbl">
 												<div class="dplay-tbl-cell">
