@@ -170,6 +170,14 @@ class WebController extends Controller
         $images = explode(",", $post->images);
         $template["tags"] = $tags;
         $template["item"] = $post;
+        $num_images = count($images);
+        $pos = 2;
+        
+        if($num_images < 3 )
+            $pos = $num_images - 1;
+            
+        unset($images[$pos]);
+        
         $template["images"] = $images;
         $template["slug"] = "product";
         $template["metas"] = $post_metas;
