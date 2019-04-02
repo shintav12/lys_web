@@ -76,7 +76,7 @@
                         {{--</div>--}}
                     </div>
                     <div class="owl-carousel">
-                        @foreach(explode(',',$item->images) as $image)
+                        @foreach($images as $image)
                             <div class="item">
                                 <img style="width:50% ;" src="{{config('app.path_url').$image}}">
                             </div>

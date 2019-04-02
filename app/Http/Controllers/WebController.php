@@ -175,7 +175,7 @@ class WebController extends Controller
         
         if($num_images < 3 )
             $pos = $num_images - 1;
-            
+
         unset($images[$pos]);
         
         $template["images"] = $images;
@@ -209,6 +209,13 @@ class WebController extends Controller
         $post_metas = DB::table('metas')->where('object_id', $post->id)->where('type',"frebie")->first();
 
         $images = explode(",", $post->images);
+        $num_images = count($images);
+        $pos = 2;
+        
+        if($num_images < 3 )
+            $pos = $num_images - 1;
+            
+        unset($images[$pos]);
         $template["tags"] = $tags;
         $template["item"] = $post;
         $template["images"] = $images;
