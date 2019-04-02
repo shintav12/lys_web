@@ -78,7 +78,7 @@
                     <div class="owl-carousel">
                         @foreach($images as $image)
                             <div class="item">
-                                <img style="width:50% ;" src="{{config('app.path_url').$image}}">
+                                <img src="{{config('app.path_url').$image}}">
                             </div>
                         @endforeach
                     </div>
