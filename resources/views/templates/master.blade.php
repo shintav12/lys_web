@@ -80,23 +80,6 @@
                                             </div>
                                         </div>
                                         @endforeach
-                                        <div class="swiper-slide">
-                                            <div class="bg-white">
-                                                <div class="plr-25 ptb-15">
-                                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- TOP STORIE -->
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-2895656582028706"
-                        data-ad-slot="5722559537"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
