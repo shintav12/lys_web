@@ -49,7 +49,7 @@ class WebController extends Controller
                     GROUP BY f.id
                     ORDER BY f.id DESC 
                     LIMIT 5)
-        ) results order by updated_at DESC limit 5"));
+        ) results order by created_at DESC limit 5"));
         
         $template = [];
         $template["phrases"] = $phrases;

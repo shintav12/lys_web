@@ -29,7 +29,7 @@
 										if($slug == "store" && count($images) < 3){
 											$pos = count($images) - 1;		
 										}?>
-										<div class="h-50 bg-10"style="background: url(<?php echo config('app.path_url').$images[$pos] ?>) no-repeat center; background-size: cover;"></div>
+										<div class="h-50 bg-10"style="background: url(<?php echo config('app.path_url').$images[0] ?>) no-repeat center; background-size: cover;"></div>
 										<div class="plr-25 ptb-15 h-50">
 											<div class="dplay-tbl">
 												<div class="dplay-tbl-cell">
@@ -37,7 +37,7 @@
 													<h4 class="mtb-10">
 														<a href="<?php echo url('/'.$slug.'/'.$item->slug) ?>"><b>{{$item->subtitle}}</b></a></h4>
 													<ul class="list-li-mr-10 color-lt-black">
-														<li><?php echo(date("d/m/Y", strtotime($item->updated_at)))?></li>
+														<li><?php echo(date("d/m/Y", strtotime($item->created_at)))?></li>
 													</ul>
 												</div>
 											</div>
