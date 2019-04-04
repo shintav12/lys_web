@@ -42,8 +42,13 @@
             loop:true,
             margin:0,
             items: 1,
-            center: true
-        })
+            center: true,
+            responsive:{
+                1000:{
+                    nav:true
+                }
+            }
+        });
     </script>
 
 @endsection
@@ -81,7 +86,7 @@
                     <div class="brdr-grey-1 mt-40 mt-sm-20"></div>
                     <div class="mt-20 mt-sm-10" style="display: flex; align-items: center; justify-content: space-between;">
                         <div style="font-size: 1.3em; color: gray; padding-right: 15px">
-                            <b>Llevatelo a solo:</b>
+                            <b>Ll&eacute;vatelo a solo:</b>
                         </div>
                         <div style="display: flex; align-items: center; justify-content: space-between">
                             <b style="font-size: 1.3em; color: gray; padding-right: 15px">${{$item->price}}</b>
