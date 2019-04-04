@@ -1,5 +1,10 @@
 <div class="mt-50 mb-20">
     <div class="row">
+        <div class="mb-30 col-12">
+            <h3 style="font-weight: bolder;">Relacionados</h3>
+        </div>
+    </div>
+    <div class="row">
     @foreach($related_items as $item)
         <div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer"  data-url="<?php echo url('/'.$slug.'/'.$item->slug) ?>" >
             <div class="card h-100 min-h-350x" style="width:100%">

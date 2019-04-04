@@ -45,7 +45,7 @@ class WebController extends Controller
                     UNION ALL
             (SELECT f.title,f.subtitle, f.slug, f.created_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'freebies' as type  
                     FROM frebies f
-                    LEFT JOIN images i ON f.id = i.object_id and i.object_type = 'post'
+                    LEFT JOIN images i ON f.id = i.object_id and i.object_type = 'frebie'
                     GROUP BY f.id
                     ORDER BY f.id DESC 
                     LIMIT 5)

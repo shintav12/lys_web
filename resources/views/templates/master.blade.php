@@ -68,7 +68,7 @@
                                         <div class="swiper-slide">
                                             <div class="bg-white">
                                                 <?php $images = explode(",", $hot->images)?>
-                                                <img src="<?php echo config('app.path_url').$images[0] ?>" alt="">
+                                                <img src="<?php echo config('app.path_url').$images[0] ?>" alt="" style="cursor:pointer" class="item" data-url="<?php echo url('/'.$hot->type.'/'.$hot->slug) ?>" >
                                                 <div class="plr-25 ptb-15">
                                                     <h5 class="color-ash"><b>{{$hot->title}}</b></h5>
                                                     <h4 class="mtb-10">
