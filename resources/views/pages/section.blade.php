@@ -25,11 +25,8 @@
 									<div class="bg-white h-100">
 									<?php 
 										$images = explode(",", $item->images);
-										$pos = 2;
-										if($slug == "store" && count($images) < 3){
-											$pos = count($images) - 1;		
-										}?>
-										<div class="h-50 bg-10"style="background: url(<?php echo config('app.path_url').$images[0] ?>) no-repeat center; background-size: cover;"></div>
+										$pos = 0;?>
+										<div class="h-50 bg-10"style="background: url(<?php echo config('app.path_url').$images[$pos] ?>) no-repeat center; background-size: cover;"></div>
 										<div class="plr-25 ptb-15 h-50">
 											<div class="dplay-tbl">
 												<div class="dplay-tbl-cell">
