@@ -2,8 +2,8 @@
     <div class="row">
     @foreach($related_items as $item)
         <div class="item col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30" style="cursor:pointer"  data-url="<?php echo url('/'.$slug.'/'.$item->slug) ?>" >
-            <div class="card h-100 min-h-350x">
-                <div class="bg-white h-100" style="width:100%">
+            <div class="card h-100 min-h-350x" style="width:100%">
+                <div class="bg-white h-100">
                 <?php $images = explode(",", $item->images)?>
                     <div class="h-50 bg-10"style="background: url(<?php echo config('app.path_url').$images[0] ?>) no-repeat center; background-size: cover;"></div>
                     <div class="plr-25 ptb-15 h-50">
