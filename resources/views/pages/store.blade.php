@@ -59,11 +59,11 @@
         }
 
         .owl-dot{
-            width: 11px !important;
-            height: 11px !important;
+            width: 10px !important;
+            height: 10px !important;
             background: #aaa !important;
             border-radius: 100px !important;
-            margin: 5px;
+            margin: 8px;
             
         }
 

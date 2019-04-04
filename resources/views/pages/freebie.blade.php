@@ -28,6 +28,52 @@
             justify-content: space-around;
             align-content: center;
         }
+        #carousel .item{
+            cursor:grab;
+            cursor:-webkit-grab;
+        }
+
+        #carousel .item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Styling Pagination*/
+        .owl-theme .owl-controls .owl-page span{
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            width: 100px;
+            height: 5px;
+            margin-left: 2px;
+            margin-right: 2px;
+            background: #ccc;
+            border:none;
+        }
+
+        .owl-dots{
+            display: flex;
+            justify-content: center;
+            padding-top: 8px;
+        }
+
+        .owl-dot{
+            width: 10px !important;
+            height: 10px !important;
+            background: #aaa !important;
+            border-radius: 100px !important;
+            margin: 8px;
+            
+        }
+
+        .owl-dot.active{
+            background: #6c757d !important;
+        }
+        .owl-theme .owl-controls .owl-page.active span,
+        .owl-theme .owl-controls.clickable .owl-page:hover span{
+            background: #3F51B5;
+        }
     </style>
 @endsection
 
@@ -47,11 +93,7 @@
             margin:0,
             items: 1,
             center: true,
-            responsive:{
-                1000:{
-                    nav:true
-                }
-            }
+            dots: true
         });
     </script>
     <script src="https://apis.google.com/js/platform.js"></script>
