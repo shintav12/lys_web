@@ -171,10 +171,7 @@ class WebController extends Controller
         $template["tags"] = $tags;
         $template["item"] = $post;
         $num_images = count($images);
-        $pos = 2;
-        
-        if($num_images < 3 )
-            $pos = $num_images - 1;
+        $pos = 0;
 
         unset($images[$pos]);
         
@@ -210,10 +207,9 @@ class WebController extends Controller
 
         $images = explode(",", $post->images);
         $num_images = count($images);
-        $pos = 2;
-        
-        if($num_images < 3 )
-            $pos = $num_images - 1;
+        $pos = 0;
+
+        unset($images[$pos]);
             
         unset($images[$pos]);
         $template["tags"] = $tags;
