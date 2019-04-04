@@ -107,7 +107,7 @@
 													<h2 class="mtb-10"><a href="{{url('/posts/'.$posts[0]->slug)}}">
 														<b>{{$posts[0]->subtitle}}</b></a></h2>
 													<ul class="list-li-mr-10 color-lt-black">
-													<li><?php echo(date("d/m/Y", strtotime($posts[0]->updated_at)))?></li>
+													<li><?php echo(date("d/m/Y", strtotime($posts[0]->created_at)))?></li>
 													</ul>
 												</div>
 											</div>
@@ -128,7 +128,7 @@
 											<h2 class="mtb-10"><a href="{{url('/posts/'.$posts[1]->slug)}}">
 												<b>{{$posts[1]->subtitle}}</b></a></h2>
 											<ul class="list-li-mr-10 color-grey">
-											<li><?php echo(date("d/m/Y", strtotime($posts[1]->updated_at)))?></li>
+											<li><?php echo(date("d/m/Y", strtotime($posts[1]->created_at)))?></li>
 											</ul>
 										</div>
 									</div>
@@ -145,7 +145,7 @@
 											<h5 class="color-ash"><b>{{$posts[2]->title}}</b></h5>
 											<h4 class="mtb-10"><a href="{{url('/posts/'.$posts[2]->slug)}}"><b>{{$posts[2]->subtitle}}</b></a></h4>
 											<ul class="list-li-mr-10 color-lt-black">
-											<li><?php echo(date("d/m/Y", strtotime($posts[2]->updated_at)))?></li>
+											<li><?php echo(date("d/m/Y", strtotime($posts[2]->created_at)))?></li>
 											</ul>
 										</div>
 									</div>
@@ -161,7 +161,7 @@
 									<h5 class="color-grey"><b>{{$posts[3]->title}}</b></h5>
 									<h4 class="mtb-10"><a href="{{url('/posts/'.$posts[3]->slug)}}"><b>{{$posts[3]->subtitle}}</b></a></h4>
 									<ul class="list-li-mr-10 color-grey">
-									<li><?php echo(date("d/m/Y", strtotime($posts[3]->updated_at)))?></li>
+									<li><?php echo(date("d/m/Y", strtotime($posts[3]->created_at)))?></li>
 									</ul>
 								</div>
 							</div>
@@ -175,7 +175,7 @@
 									<h5 class="color-grey"><b>{{$posts[4]->title}}</b></h5>
 									<h4 class="mtb-10"><a href="{{url('/videos/'.$posts[4]->slug)}}"><b>{{$posts[4]->subtitle}}</b></a></h4>
 									<ul class="list-li-mr-10 color-grey">
-									<li><?php echo(date("d/m/Y", strtotime($posts[4]->updated_at)))?></li>
+									<li><?php echo(date("d/m/Y", strtotime($posts[4]->created_at)))?></li>
 									</ul>
 								</div>
 							</div>
@@ -189,7 +189,7 @@
 								<div class="card h-100 min-h-350x">
 									<div class="bg-white h-100">
 									<?php $images = explode(",", $video->images)?>
-										<div class="h-50 bg-10" style="background: url(<?php echo config('app.path_url').$images[2] ?>) no-repeat center; background-size: cover;"></div>
+										<div class="h-50 bg-10" style="background: url(<?php echo config('app.path_url').$images[0] ?>) no-repeat center; background-size: cover;"></div>
 										<div class="plr-25 ptb-15 h-50">
 											<div class="dplay-tbl">
 												<div class="dplay-tbl-cell">
@@ -197,7 +197,7 @@
 													<h4 class="mtb-10">
 														<a href="{{url('/videos/'.$video->slug)}}"><b>{{$video->subtitle}}</b></a></h4>
 													<ul class="list-li-mr-10 color-lt-black">
-													<li><?php echo(date("d/m/Y", strtotime($video->updated_at)))?></li>
+													<li><?php echo(date("d/m/Y", strtotime($video->created_at)))?></li>
 													</ul>
 												</div>
 											</div>

@@ -37,7 +37,7 @@
 													<h4 class="mtb-10">
 														<a href="<?php echo url('/'.$item->type.'/'.$item->slug) ?>"><b>{{$item->subtitle}}</b></a></h4>
 													<ul class="list-li-mr-10 color-lt-black">
-													<li><?php echo(date("d/m/Y", strtotime($item->updated_at)))?></li>
+													<li><?php echo(date("d/m/Y", strtotime($item->created_at)))?></li>
 													</ul>
 												</div>
 											</div>

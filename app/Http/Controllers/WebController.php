@@ -29,21 +29,21 @@ class WebController extends Controller
             
         $phrases = Phrase::orderBy("id","DESC")->limit(3)->get();
         $hots = DB::select(DB::raw("select * from (
-            (SELECT v.title,v.subtitle, v.slug, v.updated_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'videos' as type 
+            (SELECT v.title,v.subtitle, v.slug, v.created_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'videos' as type 
                     FROM videos v
                     LEFT JOIN images i ON v.id = i.object_id and i.object_type = 'video'
                     GROUP BY v.id
                     ORDER BY v.id DESC 
                     LIMIT 5)
                     UNION ALL
-            (SELECT p.title,p.subtitle, p.slug, p.updated_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'posts' as type 
+            (SELECT p.title,p.subtitle, p.slug, p.created_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'posts' as type 
                     FROM post p
                     LEFT JOIN images i ON p.id = i.object_id and i.object_type = 'post'
                     GROUP BY p.id
                     ORDER BY p.id DESC 
                     LIMIT 5)
                     UNION ALL
-            (SELECT f.title,f.subtitle, f.slug, f.updated_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'freebies' as type  
+            (SELECT f.title,f.subtitle, f.slug, f.created_at, GROUP_CONCAT(i.image ORDER BY i.image_type ASC SEPARATOR ',') as images, 'freebies' as type  
                     FROM frebies f
                     LEFT JOIN images i ON f.id = i.object_id and i.object_type = 'post'
                     GROUP BY f.id

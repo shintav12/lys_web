@@ -74,7 +74,7 @@
                                                     <h4 class="mtb-10">
                                                     <a href="{{url('/'.$hot->type.'/'.$hot->slug)}}"><b>{{$hot->subtitle}}</b></a></h4>
                                                     <ul class="list-li-mr-10 color-lt-black">
-                                                    <li><?php echo(date("d/m/Y", strtotime($hot->updated_at)))?></li>
+                                                    <li><?php echo(date("d/m/Y", strtotime($hot->created_at)))?></li>
                                                     </ul>
                                                 </div>
                                             </div>
