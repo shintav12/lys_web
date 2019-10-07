@@ -16,7 +16,7 @@
 <section class="bg-1-white ptb-0">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-1"></div>
+				@include("layout.ads")
                 <div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
                     <div class="row">
                     	@foreach($items as $item)
