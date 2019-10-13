@@ -67,6 +67,8 @@
 			<div class="row">
 				@include("layout.ads")
 				<div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
+
+					@include("adstopmidbottom.ads")
 					<div class="row">
 						@foreach($phrases as $phrase)
 						<div class="col-md-6 col-lg-6 col-xl-4 mb-30">
@@ -207,6 +209,7 @@
 							</div>
 						@endforeach
 					</div>
+					@include("adstopmidbottom.ads")
 					@if(count($videos) > 6)
 						<h6 class="text-center mt-20"><a class="btn-brdr-grey color-ash plr-30" href="#"><b>LOAD MORE</b></a></h6>
 					@endif
