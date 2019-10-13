@@ -65,7 +65,7 @@
 <section class="bg-1-white ptb-0">
 		<div class="container-fluid">
 			<div class="row">
-				@include("layout.ads")
+				@include("layout.adsleft")
 				<div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
 
 					@include("layout.adstopmidbottom")
