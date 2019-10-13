@@ -9,7 +9,6 @@
                         style="display:block"
                         data-ad-client="ca-pub-3054687449371092"
                         data-ad-slot="6668221646"
-                        data-ad-format="auto"
                         data-full-width-responsive="true"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
