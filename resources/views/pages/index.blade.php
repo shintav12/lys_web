@@ -68,7 +68,7 @@
 				@include("layout.ads")
 				<div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
 
-					@include("adstopmidbottom.ads")
+					@include("layout.adstopmidbottom")
 					<div class="row">
 						@foreach($phrases as $phrase)
 						<div class="col-md-6 col-lg-6 col-xl-4 mb-30">
