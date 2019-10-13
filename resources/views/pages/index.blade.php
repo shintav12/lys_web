@@ -209,7 +209,7 @@
 							</div>
 						@endforeach
 					</div>
-					@include("adstopmidbottom.ads")
+					@include("layout.adstopmidbottom")
 					@if(count($videos) > 6)
 						<h6 class="text-center mt-20"><a class="btn-brdr-grey color-ash plr-30" href="#"><b>LOAD MORE</b></a></h6>
 					@endif
