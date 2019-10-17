@@ -4,12 +4,11 @@
             <div class="mx-w-md-400x mlr-md-auto">
                 <div class="mb-50">
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- right -->
+                    <!-- left -->
                     <ins class="adsbygoogle"
                         style="display:block"
                         data-ad-client="ca-pub-3054687449371092"
-                        data-ad-slot="9536027758"
-                        data-ad-format="auto"
+                        data-ad-slot="6668221646"
                         data-full-width-responsive="true"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
@@ -23,12 +22,11 @@
             <div class="mx-w-md-400x mlr-md-auto">  
                 <div class="mb-50">
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- right -->
+                    <!-- left -->
                     <ins class="adsbygoogle"
                         style="display:block"
                         data-ad-client="ca-pub-3054687449371092"
-                        data-ad-slot="9536027758"
-                        data-ad-format="auto"
+                        data-ad-slot="6668221646"
                         data-full-width-responsive="true"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
@@ -42,12 +40,11 @@
             <div class="mx-w-md-400x mlr-md-auto">
                 <div class="mb-50">
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- right -->
+                    <!-- left -->
                     <ins class="adsbygoogle"
                         style="display:block"
                         data-ad-client="ca-pub-3054687449371092"
-                        data-ad-slot="9536027758"
-                        data-ad-format="auto"
+                        data-ad-slot="6668221646"
                         data-full-width-responsive="true"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
