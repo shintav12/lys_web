@@ -1,6 +1,6 @@
 <div class="row">
-asdasdadasd
-    <div class="col-xs-12">
+    <div  class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-30">
+        asdasdadasd
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- ads -->
         <ins class="adsbygoogle"
