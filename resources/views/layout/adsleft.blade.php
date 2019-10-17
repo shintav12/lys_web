@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="row">
+    <div class="row">
         <div class="col-md-12 col-lg-8">
             <div class="mx-w-md-400x mlr-md-auto">  
                 <div class="mb-50">
@@ -52,5 +52,5 @@
                 </div>                   
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
