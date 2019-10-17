@@ -9,8 +9,8 @@
                         style="display:block"
                         data-ad-client="ca-pub-3054687449371092"
                         data-ad-slot="2752133142"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
+                        data-ad-format="auto">
+                    </ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
@@ -28,8 +28,8 @@
                         style="display:block"
                         data-ad-client="ca-pub-3054687449371092"
                         data-ad-slot="2752133142"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
+                        data-ad-format="auto">
+                    </ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
@@ -47,8 +47,8 @@
                         style="display:block"
                         data-ad-client="ca-pub-3054687449371092"
                         data-ad-slot="2752133142"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
+                        data-ad-format="auto">
+                    </ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
