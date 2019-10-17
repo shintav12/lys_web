@@ -91,6 +91,7 @@
 						</div>
 					</div>
 
+					@include("layout.adstopmidbottom")
 					
 					<h4 class="mb-30 mt-20 clearfix"><b>QUÉ HAY DE NUEVO EN MI CABEZA</b></h4>
 					@if(isset($posts[0]))
